@@ -60,11 +60,12 @@ export const tripData = [
     image: "https://images.unsplash.com/photo-1602498456072-2f7acb8df7dd?w=400&h=300&fit=crop",
     placeName: "Maldives Escape",
     location: "Malé, Maldives",
-    date: "10/8/25 - 15/8/25",
-    startDate: "10/8/25",
-    endDate: "15/8/25",
+    date: "10 August 2025 - 15 August 2025",
+    startDate: "10 August 2025",
+    endDate: "15 August 2025",
     price: "1200",
     colour: "orange-500",
+    category: ["beach", "romantic", "luxury", "family"],
     description: "A luxurious getaway in the heart of the Maldives with crystal-clear waters and overwater villas.",
     nearestDestinations: ["Maafushi Island", "Hulhumalé Beach", "Baa Atoll"],
     galleryImages: [
@@ -81,11 +82,12 @@ export const tripData = [
     image: "https://images.unsplash.com/photo-1526392060635-9d6019884377?w=400&h=300&fit=crop",
     placeName: "Paris Getaway",
     location: "Paris, France",
-    date: "18/9/25 - 23/9/25",
-    startDate: "18/9/25",
-    endDate: "23/9/25",
+    date: "18 September 2025 - 23 September 2025",
+    startDate: "18 September 2025",
+    endDate: "23 September 2025",
     price: "1500",
     colour: "green-900",
+    category: ["romantic", "family", "culture"],
     description: "Discover the magic of Paris with visits to the Eiffel Tower, Louvre Museum, and charming streets of Montmartre.",
     nearestDestinations: ["Versailles", "Disneyland Paris", "Giverny"],
     galleryImages: [
@@ -102,11 +104,12 @@ export const tripData = [
     image: "https://images.unsplash.com/photo-1573152958733-735a92b8ee77?w=400&h=300&fit=crop",
     placeName: "Swiss Alps Adventure",
     location: "Zermatt, Switzerland",
-    date: "5/10/25 - 10/10/25",
-    startDate: "5/10/25",
-    endDate: "10/10/25",
+    date: "5 October 2025 - 10 October 2025",
+    startDate: "5 October 2025",
+    endDate: "10 October 2025",
     price: "1800",
     colour: "yellow-600",
+    category: ["mountains", "adventure", "trekking", "nature"],
     description: "Experience the breathtaking Swiss Alps with scenic train rides, skiing, and mountain hikes.",
     nearestDestinations: ["Interlaken", "Lucerne", "Jungfraujoch"],
     galleryImages: [
@@ -123,11 +126,12 @@ export const tripData = [
     image: "https://images.unsplash.com/photo-1594824476967-e6adb448a9b5?w=400&h=300&fit=crop",
     placeName: "Bali Bliss",
     location: "Bali, Indonesia",
-    date: "20/11/25 - 25/11/25",
-    startDate: "20/11/25",
-    endDate: "25/11/25",
+    date: "20 November 2025 - 25 November 2025",
+    startDate: "20 November 2025",
+    endDate: "25 November 2025",
     price: "1100",
     colour: "orange-500",
+    category: ["beach", "family", "spiritual", "romantic"],
     description: "Explore the tropical paradise of Bali with serene beaches, ancient temples, and vibrant nightlife.",
     nearestDestinations: ["Ubud", "Nusa Penida", "Gili Islands"],
     galleryImages: [
@@ -144,11 +148,12 @@ export const tripData = [
     image: "https://images.unsplash.com/photo-1509305717900-0c36a7a6a701?w=400&h=300&fit=crop",
     placeName: "New York Explorer",
     location: "New York, USA",
-    date: "12/12/25 - 17/12/25",
-    startDate: "12/12/25",
-    endDate: "17/12/25",
+    date: "12 December 2025 - 17 December 2025",
+    startDate: "12 December 2025",
+    endDate: "17 December 2025",
     price: "1600",
     colour: "green-900",
+    category: ["urban", "family", "luxury", "culture"],
     description: "Experience the bustling streets of New York, visit Times Square, Central Park, and Broadway.",
     nearestDestinations: ["Washington D.C.", "Niagara Falls", "Philadelphia"],
     galleryImages: [
@@ -161,6 +166,7 @@ export const tripData = [
     averageRating: 4.8
   }
 ];
+
 
 
 

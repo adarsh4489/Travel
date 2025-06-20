@@ -2,8 +2,8 @@ import React from "react";
 import aboutBg from "../assets/about bg.jpg";
 import WhatWeDo from "../Components/WhatWeDo";
 import AditionalServices from "../Components/AditionalServices";
-import Testimonial from "../Components/Testimonial";
 import Cta from "../Components/Cta";
+import TestimonialCarousel from "../Components/TestimonialCarousel";
 
 const About = () => {
   return (
@@ -27,7 +27,7 @@ const About = () => {
       <WhatWeDo/>
       <AditionalServices/>
       <Cta/>
-      <Testimonial/>
+      <TestimonialCarousel/>
     </div>
   );
 };

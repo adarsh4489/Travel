@@ -5,7 +5,7 @@ import HeroTour from '../Components/HeroTour';
 import Package from '../Components/Package';
 import Offers from '../Components/Offers';
 import Services from '../Components/Services';
-import Testimonial from  "../Components/Testimonial";
+import TestimonialCarousel from "../Components/TestimonialCarousel";
 
 const Home = () => {
   return (
@@ -16,7 +16,7 @@ const Home = () => {
       <Package/>
       <Offers/>
       <HeroTour/>
-      <Testimonial/>
+      <TestimonialCarousel/>
       
       <div>
         

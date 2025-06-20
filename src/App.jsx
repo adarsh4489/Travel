@@ -9,6 +9,8 @@ import { Routes,Route } from 'react-router'
 import Footer from './Components/Footer'
 import OfferDetail from './Pages/OfferDetail'
 import About from './Pages/About'
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 function App() {
 

@@ -1,7 +1,6 @@
 import React from 'react'
 import nature from "../assets/nature.jpg";
-import TestimonialCard from '../Components/TestimonialCard';
-import Testimonial from '../Components/Testimonial';
+import TestimonialCarousel from '../Components/TestimonialCarousel';
 
 const OfferDetail = ({tag}) => {
 
@@ -43,7 +42,7 @@ const OfferDetail = ({tag}) => {
 <h2 className='text-3xl font-bold'>Similar Packages</h2>
 here more related cards
 </div>
-<Testimonial/>
+<TestimonialCarousel/>
     </div>
   )
 }
