@@ -10,6 +10,7 @@ const Footer = () => {
             <input type="text" className='text-green-950 font-medium w-1/3 px-4 py-2 rounded-l-3xl placeholder:text-green-950 outline-none bg-white' placeholder='@gmail.com' />
             <button className='bg-orange-500 cursor-pointer hover:bg-orange-600 font-semibold text-lg px-4 py-2 rounded-r-3xl'>Subscribe</button>
          </div>
+            <p className='italic text-xs'>This website is developed by Adarsh Kumar Mishra, this website is build for learning purposes only</p>
     </div>
   )
 }

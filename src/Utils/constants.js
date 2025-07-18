@@ -57,7 +57,7 @@ export const offers = [
 export const tripData = [
   {
     id: 1,
-    image: "https://images.unsplash.com/photo-1602498456072-2f7acb8df7dd?w=400&h=300&fit=crop",
+    image: "https://www.travelweek.ca/wp-content/uploads/2020/07/NARAT-promotes-secluded-Maldives-Escape-FITs.jpg",
     placeName: "Maldives Escape",
     location: "Malé, Maldives",
     date: "10 August 2025 - 15 August 2025",
@@ -101,7 +101,7 @@ export const tripData = [
   },
   {
     id: 3,
-    image: "https://images.unsplash.com/photo-1573152958733-735a92b8ee77?w=400&h=300&fit=crop",
+    image: "https://d1hirb55zrpywb.cloudfront.net/macs-adventure-tours/routes/WSGUSA/routeimagegallery/8-rsz-01102019165043055.jpg",
     placeName: "Swiss Alps Adventure",
     location: "Zermatt, Switzerland",
     date: "5 October 2025 - 10 October 2025",
@@ -123,7 +123,7 @@ export const tripData = [
   },
   {
     id: 4,
-    image: "https://images.unsplash.com/photo-1594824476967-e6adb448a9b5?w=400&h=300&fit=crop",
+    image: "https://s1.it.atcdn.net/wp-content/uploads/2013/03/GettyImages-653953140.jpg",
     placeName: "Bali Bliss",
     location: "Bali, Indonesia",
     date: "20 November 2025 - 25 November 2025",
@@ -145,7 +145,7 @@ export const tripData = [
   },
   {
     id: 5,
-    image: "https://images.unsplash.com/photo-1509305717900-0c36a7a6a701?w=400&h=300&fit=crop",
+    image: "https://cdn.britannica.com/61/93061-050-99147DCE/Statue-of-Liberty-Island-New-York-Bay.jpg",
     placeName: "New York Explorer",
     location: "New York, USA",
     date: "12 December 2025 - 17 December 2025",
@@ -167,6 +167,33 @@ export const tripData = [
   }
 ];
 
+
+export const filterBoxData=[
+   {
+    id: "category",
+    label: "Category",
+    multiple: true, // allow multiple selection
+    options: ["Romantic", "Family Trip", "Adventure", "Solo"],
+  },
+  {
+    id: "destinationType",
+    label: "Destination Type",
+    multiple: true,
+    options: ["Beaches", "Mountains", "Cruise", "City"],
+  },
+  {
+    id: "sortBy",
+    label: "Sort By",
+    multiple: false, // single selection
+    options: ["Price", "Discount", "Rating"],
+  },
+  {
+    id: "tripDuration",
+    label: "Trip Duration",
+    multiple: true,
+    options: ["2 Days", "3 Days", "4 Days", "5+ Days"],
+  },
+]
 
 
 
