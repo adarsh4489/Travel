@@ -1,5 +1,4 @@
-import React from 'react'
-import { IoSearch } from "react-icons/io5";
+
 import { Link, useNavigate } from 'react-router';
 import { IoMenu } from "react-icons/io5";
 
@@ -16,9 +15,6 @@ const Navbar = () => {
             <li className=' cursor-pointer font-semibold hover:underline hover:text-orange-600 '>About</li>
            </Link>
            <Link to="/deals"> <li className=' cursor-pointer font-semibold hover:underline hover:text-orange-600 '>Our Offers</li></Link>
-           <Link to="/booking">
-            <li className=' cursor-pointer font-semibold hover:underline hover:text-orange-600 '>Booking</li>
-           </Link>
            <Link to="/faq">
             <li className=' cursor-pointer font-semibold hover:underline hover:text-orange-600 '>FAQ</li>
            </Link>

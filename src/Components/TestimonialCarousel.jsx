@@ -34,7 +34,7 @@ const TestimonialCarousel = () => {
         <div className="my-8">
         <Slider {...settings}>
           {testimonials.map((item) => (
-           <TestimonialCard item={item} key={item.id}/>
+          <TestimonialCard item={item} key={item.id}/>
           ))}
         </Slider>
         </div>

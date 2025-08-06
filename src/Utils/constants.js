@@ -69,9 +69,10 @@ export const tripData = [
     description: "A luxurious getaway in the heart of the Maldives with crystal-clear waters and overwater villas.",
     nearestDestinations: ["Maafushi Island", "Hulhumalé Beach", "Baa Atoll"],
     galleryImages: [
-      "https://images.unsplash.com/photo-1583202075027-ec06a1a507c7?w=400&h=300&fit=crop",
-      "https://images.unsplash.com/photo-1565031519702-8159fe631ba5?w=400&h=300&fit=crop",
-      "https://images.unsplash.com/photo-1598387844652-242f59f1b5d5?w=400&h=300&fit=crop"
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0zAnJFJlDeuP9TAijRDKjq9M3S1Qsszk_6A&s",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3XqsT0UzfyT9kYN5fTO-tgJlOk6J7kgoGcA&s",
+      "https://maldivesexclusive.com/images/public/media/2025/05/28/c7cec99e-476c-4515-b77e-39e12a67b36a.jpg?w=1280&h=720&fm=jpeg&fit=crop-50-50",
+      "https://maldivesexclusive.com/images/public/media/2025/05/28/c7cec99e-476c-4515-b77e-39e12a67b36a.jpg?w=1280&h=720&fm=jpeg&fit=crop-50-50"
     ],
     facilities: ["Hotel Stay", "Flights", "Breakfast", "Snorkeling Trip"],
     packageDetails: "Enjoy a 5-night stay in a private villa, with guided snorkeling tours and exclusive island activities.",
