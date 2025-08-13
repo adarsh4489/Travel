@@ -10,6 +10,7 @@ const CategoriesCard = ({data}) => {
         <data.icon className="text-6xl z-10"/>
         </div>
         <h3 className='text-lg font-semibold text-black z-10 mt-4'>{data.title}</h3>
+        <p className='text-sm px-4 text-slate-700 text-center'>{data.description}</p>
     </div>
   )
 }

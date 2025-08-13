@@ -1,6 +1,4 @@
-import React from "react";
-import { FaGlobeAmericas } from "react-icons/fa";
-import { FcAssistant ,FcViewDetails} from "react-icons/fc";
+import { FaMapMarkedAlt,FaUserTie,FaLaptop    } from "react-icons/fa";
 import ServiceCard from "./ServiceCard";
 
 const Services = () => {
@@ -9,9 +7,9 @@ const Services = () => {
       <h1 className="text-2xl font-bold my-8 text-center ">Why To Choose Us?</h1>
 
       <div className="flex justify-center gap-8">
-        <ServiceCard icon={FaGlobeAmericas} title={"Ultimate Travel Spot"} description={"We can take you to any exclusive travel destination at the most affordable prices."}/>
-       <ServiceCard icon={FcAssistant} title={"Best Tour Guide"} description={"We provide the most experienced & friendly tour guide on the go."} />
-       <ServiceCard icon={FcViewDetails} title={"Easy Booking"} description={"We take the minimal amount of booking money to prepare the best experience for you."}/>
+        <ServiceCard icon={FaMapMarkedAlt } title={"Top Travel Spots"} description={"Explore top-rated places across India & beyond."}/>
+       <ServiceCard icon={FaUserTie } title={"Local Travel Experts"} description={"Every trip comes with knowledgeable, friendly guides."} />
+       <ServiceCard icon={FaLaptop } title={"Easy Booking"} description={"Fast and simple trip planning in just a few clicks."}/>
       </div>
     </div>
   );

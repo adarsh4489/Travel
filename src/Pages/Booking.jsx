@@ -1,12 +1,12 @@
 import { useState } from "react";
 import { FaStar } from "react-icons/fa6";
-// import { useLocation } from "react-router";
+import { useLocation } from "react-router";
 import SuccessModal from "../Components/BookingSuccessfull.jsx"
 
 const Booking = () => {
   const [showModal,setShowModal]=useState(false);
-  // const Location = useLocation();
-  // const data = Location.state?.data;
+  const Location = useLocation();
+  const data = Location.state?.data;
 
   const handlePayment = (event) => {
     event.preventDefault();
@@ -37,7 +37,7 @@ const Booking = () => {
     rzp.open();
   };
 
-  // const { placeName, location, averageRating, date, price, image } = data;
+  const { placeName, location, averageRating, date, price, image } = data;
   return (
     <div className="max-w-5xl mx-auto p-6">
       <h2 className="text-3xl font-bold mb-6 text-center">
@@ -46,7 +46,7 @@ const Booking = () => {
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         {/* 👉 Left Side — Tour Details */}
-        {/* <div className="bg-gray-100 p-4 rounded shadow-md">
+        <div className="bg-gray-100 p-4 rounded shadow-md">
           <img
             src={image}
             alt=""
@@ -65,7 +65,7 @@ const Booking = () => {
           </span>
           <p className="text-gray-600">₹{price}/ Person</p>
           <p className="mt-2 text-green-600 font-bold">{date}</p>
-        </div> */}
+        </div>
 
         {/* 👉 Right Side — Booking Form */}
         <form className="space-y-4 bg-white p-4 rounded shadow-md"           

@@ -1,28 +1,23 @@
-import React from 'react'
-import HeroSection from '../Components/HeroSection';
-import Categories from '../Components/Categories';
-import HeroTour from '../Components/HeroTour';
-import Package from '../Components/Package';
-import Offers from '../Components/Offers';
-import Services from '../Components/Services';
+import HeroSection from "../Components/HeroSection";
+import Categories from "../Components/Categories";
+// import HeroTour from "../Components/HeroTour";
+import Services from "../Components/Services";
 import TestimonialCarousel from "../Components/TestimonialCarousel";
+import PopularDestinations from "../Components/PopularDestinations";
 
 const Home = () => {
   return (
-    <div className='mx-auto my-4'>
-      <HeroSection/>
-      <Services/>
-      <Categories/>
-      <Package/>
-      <Offers/>
-      <HeroTour/>
-      <TestimonialCarousel/>
-      
-      <div>
-        
-      </div>
-    </div>
-  )
-}
+    <div className="mx-auto my-4">
+      <HeroSection />
+      <Services />
+      <Categories />
+      <PopularDestinations />
+      {/* <HeroTour /> */}
+      <TestimonialCarousel />
 
-export default Home
+      <div></div>
+    </div>
+  );
+};
+
+export default Home;
