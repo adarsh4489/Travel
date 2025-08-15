@@ -1,19 +1,21 @@
 import HeroSection from "../Components/HeroSection";
 import Categories from "../Components/Categories";
-// import HeroTour from "../Components/HeroTour";
 import Services from "../Components/Services";
 import TestimonialCarousel from "../Components/TestimonialCarousel";
 import PopularDestinations from "../Components/PopularDestinations";
+import HowItWorks from "../Components/HowItWorks";
+import FeaturedBlog from "../Components/FeaturedBlog"
 
 const Home = () => {
   return (
-    <div className="mx-auto my-4">
+    <div className="mx-auto my-4 flex flex-col gap-16">
       <HeroSection />
       <Services />
+      <HowItWorks/>
       <Categories />
       <PopularDestinations />
-      {/* <HeroTour /> */}
       <TestimonialCarousel />
+      <FeaturedBlog/>
 
       <div></div>
     </div>

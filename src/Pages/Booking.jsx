@@ -36,7 +36,7 @@ const Booking = () => {
     const rzp = new window.Razorpay(options);
     rzp.open();
   };
-
+console.log(data);
   const { placeName, location, averageRating, date, price, image } = data;
   return (
     <div className="max-w-5xl mx-auto p-6">

@@ -1,45 +1,56 @@
+// Import Swiper React components
+import { Swiper, SwiperSlide } from "swiper/react";
+
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/autoplay";
+
+// Import required modules
+import { Pagination, Autoplay,Navigation } from "swiper/modules";
+
 import { testimonials } from "../Utils/constants";
 import TestimonialCard from "./TestimonialCard";
-import Slider from "react-slick";
 
 const TestimonialCarousel = () => {
-    const settings = {
-
-      dots: true,
-      infinite: true,
-      slidesToShow: 3,
-      slidesToScroll: 1,
-      autoplay: true,
-      autoplaySpeed: 3000,
-      pauseOnHover: true,
-      responsive: [
-        {
-          breakpoint: 1024,
-          settings: {
-            slidesToShow: 2,
-          },
-        },
-        {
-          breakpoint: 640,
-          settings: {
-            slidesToShow: 1,
-          },
-        },
-      ]
-    };
-  
-    return (
-      <div className="w-[80%] mx-auto py-12">
-        <h2 className="text-3xl font-semibold text-green-900 underline text-center ">What Our Travelers Say</h2>
-        <div className="my-8">
-        <Slider {...settings}>
+  return (
+    <div className="w-[80%] mx-auto py-12">
+      <h2 className="text-3xl font-semibold text-green-900 underline text-center">
+        What Our Travelers Say
+      </h2>
+      <div className="my-8">
+        <Swiper
+          modules={[Pagination, Autoplay]}
+          spaceBetween={30}
+          slidesPerView={3}
+          loop={true}
+          navigation={true}
+          pagination={{ clickable: true }}
+          autoplay={{
+            delay: 3000,
+            disableOnInteraction: false,
+          }}
+          breakpoints={{
+            640: {
+              slidesPerView: 1,
+            },
+            1024: {
+              slidesPerView: 2,
+            },
+            1280: {
+              slidesPerView: 3,
+            },
+          }}
+        >
           {testimonials.map((item) => (
-          <TestimonialCard item={item} key={item.id}/>
+            <SwiperSlide key={item.id}>
+              <TestimonialCard item={item} />
+            </SwiperSlide>
           ))}
-        </Slider>
-        </div>
+        </Swiper>
       </div>
-    );
-  };
-  
-  export default TestimonialCarousel;
+    </div>
+  );
+};
+
+export default TestimonialCarousel;

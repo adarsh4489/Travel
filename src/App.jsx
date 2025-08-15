@@ -4,6 +4,8 @@ import Booking from './Pages/Booking'
 import Home from './Pages/Home'
 import Faq from "./Pages/Faq"
 import Deals from './Pages/Deals'
+import Blogs from './Pages/Blogs'
+import BlogDetail from "./Pages/BlogDetail"
 import ErrorPage from './Components/ErrorPage'
 import { Routes,Route } from 'react-router'
 import Footer from './Components/Footer'
@@ -22,6 +24,8 @@ function App() {
       <Route path='/' element={<Home/>}/>
       <Route path='/about' element={<About/>}/>
       <Route path='/booking' element={<Booking/>}/>
+      <Route path='/blogs' element={<Blogs/>}/>
+      <Route path='/blogs/:id' element={<BlogDetail/>}/>
       <Route path='/faq' element={<Faq/>}/>
       <Route path='/deals' element={<Deals/>}/>
       <Route path='/deals/:id' element={<OfferDetail/>}/>

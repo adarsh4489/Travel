@@ -8,11 +8,8 @@ import { FaDollarSign,FaBus ,FaBuilding  } from "react-icons/fa";
 const WhatWeDo = () => {
   return (
     <div className='w-[80%] mx-auto py-12 px-8'>
-        <h1 className='text-3xl font-semibold text-green-900 my-4'>Choose Wise Trips for all your travels</h1>
-        <p className='text-justify'>At Bhraman, we specialize in crafting personalized travel experiences that cater to every kind of traveler. From breathtaking destinations to seamless itinerary planning, we ensure hassle-free and memorable journeys. Our expert team handpicks the best accommodations, activities, and guides to make your trip extraordinary. With a commitment to affordability, safety, and comfort, we make exploring the world easier than ever. Whether it’s an adventure-packed getaway or a relaxing retreat, we turn your travel dreams into reality!</p>
-
         <div className='my-12'>
-          <h3 className='text-3xl font-semibold text-green-900 my-4'>Why Us Not Others</h3>
+          <h3 className='text-3xl font-semibold text-green-900 my-4'>What Sets Us Apart</h3>
           <p className='text-justify'>We make sure our clients are having the best vacation of their life. We take care of everything they might need on the tour and offer flexibility all around while choosing packages.</p>
 
           <div className='flex items-center justify-evenly gap-2 my-4'>

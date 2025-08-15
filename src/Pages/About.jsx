@@ -1,9 +1,11 @@
-import React from "react";
+
 import aboutBg from "../assets/about bg.jpg";
 import WhatWeDo from "../Components/WhatWeDo";
 import AditionalServices from "../Components/AditionalServices";
 import Cta from "../Components/Cta";
+import OurStorySection from "../Components/OurStory";
 import TestimonialCarousel from "../Components/TestimonialCarousel";
+import OurImpactSection from "../Components/OurImpact"
 
 const About = () => {
   return (
@@ -24,8 +26,10 @@ const About = () => {
           back up he information they are giving you.
         </p>
       </div>
+      <OurStorySection/>
       <WhatWeDo/>
       <AditionalServices/>
+      <OurImpactSection/>
       <Cta/>
       <TestimonialCarousel/>
     </div>

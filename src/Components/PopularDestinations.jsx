@@ -8,7 +8,7 @@ const PopularDestinations = () => {
   const popularTrips = tripData
     .filter(
       (trip) =>
-        trip.tags?.includes("popular") || trip.tags?.includes("bestseller")
+        trip.tags?.includes("Popular") || trip.tags?.includes("Bestseller")
     )
     .slice(0, 5);
 

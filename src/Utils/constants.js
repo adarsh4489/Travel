@@ -74,10 +74,10 @@ export const offers = [
 ];
 
 export const tripData = [
-  // Beach Getaway — At least 6
+  // Beach Getaway — 6
   {
     id: 1,
-    image: "https://source.unsplash.com/600x400/?Goa,beach",
+    image: "https://media.istockphoto.com/id/1126114956/photo/panoramic-view-of-palolem-beach-in-south-goa.jpg?s=612x612&w=0&k=20&c=oE9WEZaRXvIOhKbQGn6Uo_W5ukNzAseZOGF0JGm_j4o=",
     placeName: "Goa Coastal Escape",
     location: "Goa, India",
     date: "2025-12-10 - 2025-12-15",
@@ -86,22 +86,22 @@ export const tripData = [
     price: "₹25,000",
     colour: "bg-yellow-200",
     category: ["beach-getaway"],
-    tags: ["bestseller", "popular"],
-    description: "Relax on sun-kissed beaches of North and South Goa, with lively nightlife and serene getaways.",
+    tags: ["Popular", "Friends","Romantic","Beaches","India","Most Booked"],
+    description: "Relax on sun-kissed beaches of North and South Goa, with nightlife and serenity.",
     nearestDestinations: ["Panaji", "Vagator", "Palolem"],
     galleryImages: [
-      "https://source.unsplash.com/600x400/?Goa,sea",
-      "https://source.unsplash.com/600x400/?Goa,party",
-      "https://source.unsplash.com/600x400/?Goa,market"
+      "https://media.istockphoto.com/id/535168027/photo/india-goa-palolem-beach.jpg?s=612x612&w=0&k=20&c=iGV1Ue0Efj87dQirWnUpZVG1dNobUjfVvMGdKHTJ7Qg=",
+      "https://media.istockphoto.com/id/503760697/photo/landscape-goa.jpg?s=612x612&w=0&k=20&c=MY7cuDM5KW1fk1FyRuyf7nGrfP1dWOVh9VzXgWg2EJg=",
+      "https://media.istockphoto.com/id/518814095/photo/idyllic-beach.jpg?s=612x612&w=0&k=20&c=NDhlKeWzoaWdLz5-VBfSVspnzEzzwIH8W5kcEnRfnZI="
     ],
     facilities: ["Hotel Stay", "Breakfast", "Water Sports"],
-    packageDetails: "Includes guided tours, water sports, nightlife entry, and beachside dining.",
+    packageDetails: "Guided tours, water sports, nightlife, beachside dining.",
     averageRating: 4.5,
     region: "India"
   },
   {
     id: 2,
-    image: "https://source.unsplash.com/600x400/?Maldives,beach",
+    image: "https://www.shutterstock.com/image-photo/perfect-maldives-paradise-scene-tropical-600nw-2481436177.jpg",
     placeName: "Maldives Luxury Retreat",
     location: "Maldives",
     date: "2026-01-05 - 2026-01-10",
@@ -110,22 +110,22 @@ export const tripData = [
     price: "$1200",
     colour: "bg-blue-100",
     category: ["beach-getaway", "exotic-trips"],
-    tags: ["luxury"],
-    description: "Overwater villas and pristine lagoons in a tropical paradise of privacy and romance.",
+    tags: ["Luxury", "Romantic","Beaches","Family","International","Limited Offer"],
+    description: "Overwater villas and pristine lagoons—ultimate privacy and romance.",
     nearestDestinations: ["Male Atoll", "Ari Atoll", "Baa Atoll"],
     galleryImages: [
-      "https://source.unsplash.com/600x400/?Maldives,overwater",
-      "https://source.unsplash.com/600x400/?Maldives,lagoon",
-      "https://source.unsplash.com/600x400/?Maldives,resort"
+      "https://img.freepik.com/premium-vector/beautiful-collection-landscapes-sea-beach-wallpapers_1045923-4747.jpg?semt=ais_hybrid&w=740",
+      "https://www.shutterstock.com/shutterstock/videos/3784657523/thumb/1.jpg?ip=x480",
+      "https://img.freepik.com/free-photo/nature-landscape-with-starry-clear-sky_23-2151683193.jpg?semt=ais_hybrid&w=740"
     ],
     facilities: ["Hotel Stay", "Breakfast", "Snorkeling", "Spa"],
-    packageDetails: "Includes sea plane transfers, snorkeling, spa, candlelight dinner on beach.",
+    packageDetails: "Sea plane transfers, snorkeling, spa, candlelight dinner on beach.",
     averageRating: 4.9,
     region: "Out of India"
   },
   {
     id: 3,
-    image: "https://source.unsplash.com/600x400/?Bali,beach",
+    image: "https://media.istockphoto.com/id/675172642/photo/pura-ulun-danu-bratan-temple-in-bali.jpg?s=612x612&w=0&k=20&c=_MPdmDviIyhldqhf7t6s63C-bZbTGfNHMlJP9SIa8Y0=",
     placeName: "Bali Romantic Shore",
     location: "Bali, Indonesia",
     date: "2025-11-20 - 2025-11-25",
@@ -134,22 +134,22 @@ export const tripData = [
     price: "$800",
     colour: "bg-pink-100",
     category: ["beach-getaway", "exotic-trips"],
-    tags: ["romantic", "offer"],
-    description: "Tropical beach retreat with cultural excursions to temples and rice terraces.",
+    tags: ["Romantic", "Popular","International","Luxury"],
+    description: "Tropical beach retreat with temple visits and rice terrace walks.",
     nearestDestinations: ["Ubud", "Uluwatu", "Seminyak"],
     galleryImages: [
-      "https://source.unsplash.com/600x400/?Bali,sea",
-      "https://source.unsplash.com/600x400/?Bali,temple",
-      "https://source.unsplash.com/600x400/?Bali,romantic"
+      "https://media.istockphoto.com/id/1485106198/photo/diamond-beach-is-one-of-the-most-visited-beaches-in-nusa-penida-indonesia.jpg?s=612x612&w=0&k=20&c=6Zo4FsY2Q0tGtAuLAbvUFi9oOYoogb_mTfYVIqliJIg=",
+      "https://images.unsplash.com/photo-1577717903315-1691ae25ab3f?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8YmFsaXxlbnwwfHwwfHx8MA%3D%3D",
+      "https://img.freepik.com/free-photo/young-woman-standing-temple-gates-lempuyang-luhur-temple-bali-indonesia-vintage-tone_335224-369.jpg"
     ],
     facilities: ["Hotel Stay", "Breakfast", "Guided Tour"],
-    packageDetails: "Includes temple visits, romantic dinner, rice terrace trek and spa.",
+    packageDetails: "Temple visits, romantic dinner, rice terrace trek, spa.",
     averageRating: 4.8,
     region: "Out of India"
   },
   {
     id: 4,
-    image: "https://source.unsplash.com/600x400/?Palolem,beach",
+    image: "https://source.unsplash.com/600x400?palolem-beach",
     placeName: "Palolem Peaceful Beach",
     location: "Goa, India",
     date: "2025-10-05 - 2025-10-09",
@@ -158,22 +158,22 @@ export const tripData = [
     price: "₹18,000",
     colour: "bg-green-100",
     category: ["beach-getaway", "hidden-gems"],
-    tags: ["hidden-gem"],
-    description: "Palm-fringed beach offering tranquility, yoga, and laid-back vibes.",
+    tags: ["Hidden Gem", "Budget"],
+    description: "Palm-fringed beach perfect for yoga and downtime.",
     nearestDestinations: ["Canacona", "Agonda", "Cola Beach"],
     galleryImages: [
-      "https://source.unsplash.com/600x400/?Palolem,beach",
-      "https://source.unsplash.com/600x400/?Goa,palm",
-      "https://source.unsplash.com/600x400/?Goa,yoga"
+      "https://source.unsplash.com/600x400?palolem-beach",
+      "https://source.unsplash.com/600x400?goa-palm",
+      "https://source.unsplash.com/600x400?goa-yoga"
     ],
     facilities: ["Hotel Stay", "Breakfast", "Yoga Session"],
-    packageDetails: "Includes yoga class, beach walks, seafood dinners and shacks.",
+    packageDetails: "Yoga classes, beach walks, seafood dinners.",
     averageRating: 4.6,
     region: "India"
   },
   {
     id: 5,
-    image: "https://source.unsplash.com/600x400/?Varkala,beach",
+    image: "https://www.shutterstock.com/image-photo/view-varkala-beach-cliff-kerala-260nw-294262202.jpg",
     placeName: "Varkala Cliffside Beach",
     location: "Kerala, India",
     date: "2025-09-15 - 2025-09-19",
@@ -182,22 +182,22 @@ export const tripData = [
     price: "₹22,000",
     colour: "bg-red-100",
     category: ["beach-getaway", "hidden-gems"],
-    tags: [],
-    description: "Scenic beach built on cliffs, dramatic views and serene Arabian Sea.",
+    tags: ["Scenic", "Popular"],
+    description: "Cliff-side beach with dramatic views and peaceful vibes.",
     nearestDestinations: ["Kollam", "Valiyaparamba", "Alappuzha"],
     galleryImages: [
-      "https://source.unsplash.com/600x400/?Varkala,cliff",
-      "https://source.unsplash.com/600x400/?Kerala,beach",
-      "https://source.unsplash.com/600x400/?Kerala,sea"
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqwpgxs2L-M92ba5qZT4GGyde1C4LlBqb7WEB4tNdBU5q23jn7oUSzBnjvmzblSFsBtYQ&usqp=CAU",
+      "https://media.istockphoto.com/id/2065177274/photo/view-of-varkala-coast-kerala-india.jpg?s=612x612&w=0&k=20&c=wxbXijU96qvGtSxIUYfiogp1epPvhq8t0DCpZoKPNY4=",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIzYM0oDj8G7rQd1ztyCNhez5qysGIJLmBAoj2L-35ys5Q-0OjHhMuPY_E7ABO8kjvBvI&usqp=CAU"
     ],
     facilities: ["Hotel Stay", "Breakfast", "Guided Tour"],
-    packageDetails: "Includes cliff walking, Ayurvedic spa, seafood dinners.",
+    packageDetails: "Cliff walks, Ayurvedic spa, seafood dinners.",
     averageRating: 4.4,
     region: "India"
   },
   {
     id: 6,
-    image: "https://source.unsplash.com/600x400/?Lakshadweep,beach",
+    image: "https://s7ap1.scene7.com/is/image/incredibleindia/1-%20water-jet-skiing-bangaram-Island-lakshadweep-state-hero?qlt=82&ts=1726667570716",
     placeName: "Lakshadweep Coral Retreat",
     location: "Lakshadweep, India",
     date: "2025-12-01 - 2025-12-05",
@@ -206,23 +206,24 @@ export const tripData = [
     price: "₹50,000",
     colour: "bg-teal-100",
     category: ["beach-getaway", "exotic-trips"],
-    tags: ["nature"],
-    description: "Pristine coral reefs and turquoise lagoons, perfect for peace and diving.",
+    tags: ["Nature", "Early Bird"],
+    description: "Pristine coral reefs and turquoise lagoons—peaceful diving spot.",
     nearestDestinations: ["Agatti", "Bangaram", "Minicoy"],
     galleryImages: [
-      "https://source.unsplash.com/600x400/?Lakshadweep,lagoon",
-      "https://source.unsplash.com/600x400/?Lakshadweep,coral",
-      "https://source.unsplash.com/600x400/?Lakshadweep,sea"
+      "https://s7ap1.scene7.com/is/image/incredibleindia/1-%20water-jet-skiing-bangaram-Island-lakshadweep-state-hero?qlt=82&ts=1726667570716",
+      "https://s7ap1.scene7.com/is/image/incredibleindia/1-%20water-jet-skiing-bangaram-Island-lakshadweep-state-hero?qlt=82&ts=1726667570716",
+      "https://media.istockphoto.com/id/1224349638/photo/coconut-fringed-beach.jpg?s=612x612&w=0&k=20&c=26FO8pa5zcKQdqjhitHZMAgCmF_B-wDD6MDV93v5j6o="
     ],
     facilities: ["Hotel Stay", "Breakfast", "Guided Tour", "Snorkeling"],
-    packageDetails: "Includes boat trips, snorkeling, beach stays and local cuisine.",
+    packageDetails: "Boat trips, snorkeling, beach stays, local cuisine.",
     averageRating: 4.7,
     region: "India"
   },
-  // Adventure Trips — At least 6
+
+  // Adventure Trips — 6
   {
     id: 7,
-    image: "https://source.unsplash.com/600x400/?Himalaya,trekking",
+    image: "https://www.shutterstock.com/image-photo/pristine-view-kedarnath-mountain-peak-260nw-2615571965.jpg",
     placeName: "Kedarnath Trek Adventure",
     location: "Uttarakhand, India",
     date: "2026-05-01 - 2026-05-07",
@@ -231,22 +232,22 @@ export const tripData = [
     price: "₹30,000",
     colour: "bg-gray-200",
     category: ["adventure-trips", "cultural-trails"],
-    tags: ["pilgrimage"],
-    description: "Trek to sacred Kedarnath temple amidst majestic Himalayan landscapes.",
+    tags: ["Pilgrimage", "Popular"],
+    description: "Trek to sacred Kedarnath in the Himalayas.",
     nearestDestinations: ["Gaurikund", "Sonprayag", "Rudraprayag"],
     galleryImages: [
-      "https://source.unsplash.com/600x400/?Kedarnath,trek",
-      "https://source.unsplash.com/600x400/?Himalaya,temple",
-      "https://source.unsplash.com/600x400/?Uttarakhand,landscape"
+      "https://www.shutterstock.com/image-photo/pristine-view-kedarnath-mountain-peak-260nw-2615571965.jpg",
+      "https://www.shutterstock.com/image-photo/kedarnath-uttarakhand-india-23102020-himalayan-260nw-1927801253.jpg",
+      "https://www.shutterstock.com/image-photo/kedarnath-uttarakhand-india-october16th-2021-260nw-2329685069.jpg"
     ],
     facilities: ["Camp Stay", "Breakfast", "Guided Tour"],
-    packageDetails: "Includes 17 km trek, guide, camps, meals, temple darshan. Info: open Apr–Nov :contentReference[oaicite:1]{index=1}",
+    packageDetails: "17 km trek, guide, camp, meals, temple darshan.",
     averageRating: 4.8,
     region: "India"
   },
   {
     id: 8,
-    image: "https://source.unsplash.com/600x400/?Rishikesh,rafting",
+    image: "https://media.istockphoto.com/id/1134669000/photo/young-people-enjoyinh-whitewater-river-rafting-in-river-ganges-rishikesh-india.jpg?s=612x612&w=0&k=20&c=5ARzZ5rt9ROM_XFXUkHqSpqxqwGRRm25Rtpbj9fHzjo=",
     placeName: "Rishikesh River Rush",
     location: "Rishikesh, India",
     date: "2025-08-10 - 2025-08-14",
@@ -255,22 +256,22 @@ export const tripData = [
     price: "₹12,000",
     colour: "bg-blue-200",
     category: ["adventure-trips", "cultural-trails"],
-    tags: ["rafting"],
-    description: "Experience river rafting, bungee jumps and yoga in the yoga capital of the world.",
+    tags: ["Adventure", "Youth"],
+    description: "Rafting, bungee, zipline, and yoga in Rishikesh.",
     nearestDestinations: ["Lakshman Jhula", "Ram Jhula", "Neelkanth Temple"],
     galleryImages: [
-      "https://source.unsplash.com/600x400/?Rishikesh,rafting",
-      "https://source.unsplash.com/600x400/?Rishikesh,bungee",
-      "https://source.unsplash.com/600x400/?Rishikesh,yoga"
+      "https://s7ap1.scene7.com/is/image/incredibleindia/laxman%20jhula-rishikesh-uttrakhand-hero?qlt=82&ts=1726646312953",
+      "https://s7ap1.scene7.com/is/image/incredibleindia/1-triveni-ghat-rishikesh-uttarakhand-2-city-hero?qlt=82&ts=1726646286991",
+      "https://www.shutterstock.com/shutterstock/videos/3559329119/thumb/1.jpg?ip=x480"
     ],
     facilities: ["Camp Stay", "Breakfast", "Guided Tour"],
-    packageDetails: "Rafting Grades I–IV, Asia’s longest zipline, bungee, yoga retreats :contentReference[oaicite:2]{index=2}",
+    packageDetails: "Rafting Grades I–IV, Asia’s longest zipline, bungee, yoga.",
     averageRating: 4.6,
     region: "India"
   },
   {
     id: 9,
-    image: "https://source.unsplash.com/600x400/?Swiss,alps,trek",
+    image: "https://media.istockphoto.com/id/1135087819/photo/young-skier-skiing-at-zermatt-ski-resort-switzerland.jpg?s=612x612&w=0&k=20&c=621xnjzv0CBPMhyZBd9XJeUY1d7c14t1hoD4tn8p4Qk=",
     placeName: "Swiss Alps Skiing",
     location: "Switzerland",
     date: "2026-02-01 - 2026-02-07",
@@ -279,22 +280,22 @@ export const tripData = [
     price: "$2000",
     colour: "bg-white",
     category: ["adventure-trips", "exotic-trips"],
-    tags: ["skiing"],
-    description: "Ski the snowy slopes of Switzerland with panoramic alpine views and cozy chalets.",
+    tags: ["Winter", "Luxury"],
+    description: "Skiing amid Swiss Alpine scenery.",
     nearestDestinations: ["Zermatt", "Interlaken", "Jungfrau"],
     galleryImages: [
-      "https://source.unsplash.com/600x400/?Swiss,alps",
-      "https://source.unsplash.com/600x400/?Switzerland,ski",
-      "https://source.unsplash.com/600x400/?Chalet,Switzerland"
+      "https://www.shutterstock.com/image-photo/amazing-beautiful-view-gornergrat-zermatt-260nw-1487365274.jpg",
+      "https://www.shutterstock.com/image-photo/french-alps-winter-famous-ski-260nw-2551856921.jpg",
+      "https://www.shutterstock.com/image-photo/aerial-view-beautiful-snowcovered-alps-600nw-2603051461.jpg"
     ],
     facilities: ["Hotel Stay", "Breakfast", "Ski Pass", "Guided Tour"],
-    packageDetails: "Includes ski passes, gear rental, chalet stay, and mountain train.",
+    packageDetails: "Ski passes, gear rental, chalet stay, mountain train.",
     averageRating: 4.9,
     region: "Out of India"
   },
   {
     id: 10,
-    image: "https://source.unsplash.com/600x400/?Nepal,trek",
+    image: "https://plus.unsplash.com/premium_photo-1697729944636-0b630fe30ad6?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8ZXZlcmVzdCUyMGJhc2UlMjBjYW1wfGVufDB8fDB8fHww",
     placeName: "Everest Base Camp Trek",
     location: "Nepal",
     date: "2026-04-01 - 2026-04-15",
@@ -303,22 +304,22 @@ export const tripData = [
     price: "$1500",
     colour: "bg-gray-300",
     category: ["adventure-trips", "mountains"],
-    tags: ["challenging"],
-    description: "Epic trek to the foot of Everest through Sherpa villages and rugged Himalayan terrain.",
+    tags: ["Challenging", "Solo"],
+    description: "Trek to the base of Everest through Sherpa villages.",
     nearestDestinations: ["Namche Bazaar", "Tengboche", "Lukla"],
     galleryImages: [
-      "https://source.unsplash.com/600x400/?Everest,basecamp",
-      "https://source.unsplash.com/600x400/?Himalayas,trek",
-      "https://source.unsplash.com/600x400/?Nepal,landscape"
+      "https://plus.unsplash.com/premium_photo-1697729944636-0b630fe30ad6?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8ZXZlcmVzdCUyMGJhc2UlMjBjYW1wfGVufDB8fDB8fHww",
+      "https://www.shutterstock.com/image-photo/trekkers-posing-everest-base-camp-260nw-2463964131.jpg",
+      "https://www.shutterstock.com/image-photo/trekkers-posing-everest-base-camp-260nw-2463964131.jpg"
     ],
     facilities: ["Camp Stay", "Breakfast", "Porter", "Guide"],
-    packageDetails: "Includes trek permits, guide, porters, meals, and lodging in tea houses.",
+    packageDetails: "Permits, guide, porter, meals, tea-house stays.",
     averageRating: 4.8,
     region: "Out of India"
   },
   {
     id: 11,
-    image: "https://source.unsplash.com/600x400/?Maharashtra,trekking",
+    image: "https://www.shutterstock.com/image-photo/scene-sinhagad-fort-near-pune-260nw-2461714577.jpg",
     placeName: "Sinhagad Fort Trek",
     location: "Maharashtra, India",
     date: "2025-10-20 - 2025-10-22",
@@ -327,22 +328,22 @@ export const tripData = [
     price: "₹6,000",
     colour: "bg-red-200",
     category: ["adventure-trips", "hidden-gems"],
-    tags: ["history"],
-    description: "Short but steep trek to historic Sinhagad Fort with panorama of the Western Ghats.",
+    tags: ["Budget", "History"],
+    description: "Short trek to historic Sinhagad Fort with Western Ghats views.",
     nearestDestinations: ["Pune", "Lion's Point", "Tikona Fort"],
     galleryImages: [
-      "https://source.unsplash.com/600x400/?Sinhagad,trek",
-      "https://source.unsplash.com/600x400/?Western,Ghats",
-      "https://source.unsplash.com/600x400/?Fort,India"
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_EN_9RhSOjAbucbnSH_6_XXTdUi-PnCFSag&s",
+      "https://www.shutterstock.com/image-photo/sinhagad-fort-pune-260nw-788932003.jpg",
+      "https://www.shutterstock.com/image-photo/beautiful-view-sinhagad-fort-260nw-2520068497.jpg"
     ],
     facilities: ["Camp Stay", "Breakfast", "Guide"],
-    packageDetails: "Drive from Pune, guided trek, history tour, meals included.",
+    packageDetails: "Drive from Pune, guided trek, meals included.",
     averageRating: 4.3,
     region: "India"
   },
   {
     id: 12,
-    image: "https://source.unsplash.com/600x400/?Bali,biking",
+    image: "https://source.unsplash.com/600x400?bali-biking",
     placeName: "Bali Volcano Bike Tour",
     location: "Bali, Indonesia",
     date: "2026-03-10 - 2026-03-12",
@@ -351,23 +352,24 @@ export const tripData = [
     price: "$500",
     colour: "bg-orange-100",
     category: ["adventure-trips", "exotic-trips"],
-    tags: ["biking"],
-    description: "Mountain biking through villages and rice terraces at sunrise near Mount Batur.",
+    tags: ["Adventure", "Group"],
+    description: "Mountain biking near Mount Batur at sunrise.",
     nearestDestinations: ["Ubud", "Mount Batur", "Tegalalang"],
     galleryImages: [
-      "https://source.unsplash.com/600x400/?Bali,biking",
-      "https://source.unsplash.com/600x400/?Tegalalang,terrace",
-      "https://source.unsplash.com/600x400/?Mount,Batur"
+      "https://source.unsplash.com/600x400?bali-biking",
+      "https://source.unsplash.com/600x400?tegalalang-terrace",
+      "https://source.unsplash.com/600x400?mount-batur"
     ],
     facilities: ["Hotel Stay", "Breakfast", "Guide", "Bike"],
-    packageDetails: "Includes bike rental, sunrise ride, tour guide, hotel stay.",
+    packageDetails: "Bike rental, sunrise ride, tour guide, hotel stay.",
     averageRating: 4.7,
     region: "Out of India"
   },
-  // Cultural Trails — At least 6
+
+  // Cultural Trails — 6
   {
     id: 13,
-    image: "https://source.unsplash.com/600x400/?Ayodhya,temple",
+    image: "https://source.unsplash.com/600x400?ayodhya-temple",
     placeName: "Ayodhya Ram Mandir Pilgrimage",
     location: "Ayodhya, India",
     date: "2025-11-01 - 2025-11-03",
@@ -376,22 +378,22 @@ export const tripData = [
     price: "₹8,000",
     colour: "bg-gold-100",
     category: ["cultural-trails", "hidden-gems"],
-    tags: ["pilgrimage"],
-    description: "Visit the newly inaugurated Ram Mandir and sacred sites along river Sarayu.",
+    tags: ["Pilgrimage", "Budget"],
+    description: "Visit the newly inaugurated Ram Mandir and sacred river sites.",
     nearestDestinations: ["Sarayu River", "Hanumangarhi", "Nagarjuna Sagar"],
     galleryImages: [
-      "https://source.unsplash.com/600x400/?Ayodhya,temple",
-      "https://source.unsplash.com/600x400/?Ayodhya,river",
-      "https://source.unsplash.com/600x400/?Ayodhya,heritage"
+      "https://img.freepik.com/free-photo/crowded-scene-indian-city_23-2151765561.jpg?semt=ais_hybrid&w=740&q=80",
+      "https://img.freepik.com/free-photo/indian-city-buildings-scene_23-2151823141.jpg?semt=ais_hybrid&w=740",
+      "https://source.unsplash.com/600x400?ayodhya-heritage"
     ],
     facilities: ["Hotel Stay", "Breakfast", "Guided Tour"],
-    packageDetails: "Includes darshan, cultural walking tour, riverside aarti, and meals. Ayodhya has become top pilgrimage destination :contentReference[oaicite:3]{index=3}",
+    packageDetails: "Darshan, walking tour, riverside aarti, meals included.",
     averageRating: 4.5,
     region: "India"
   },
   {
     id: 14,
-    image: "https://source.unsplash.com/600x400/?Varanasi,temple",
+    image: "https://source.unsplash.com/600x400?varanasi-ghat",
     placeName: "Varanasi Spiritual Trail",
     location: "Varanasi, India",
     date: "2025-12-20 - 2025-12-23",
@@ -400,22 +402,22 @@ export const tripData = [
     price: "₹12,000",
     colour: "bg-saffron-100",
     category: ["cultural-trails", "hidden-gems"],
-    tags: ["heritage", "popular"],
-    description: "Walk along Ghats, attend Ganga Aarti, and explore ancient temples and alleys.",
+    tags: ["Heritage", "Popular"],
+    description: "Walk along ghats, attend aarti, explore temples and alleys.",
     nearestDestinations: ["Dashashwamedh Ghat", "Sarnath", "Assi Ghat"],
     galleryImages: [
-      "https://source.unsplash.com/600x400/?Varanasi,aarti",
-      "https://source.unsplash.com/600x400/?Varanasi,ghats",
-      "https://source.unsplash.com/600x400/?Sarnath,temple"
+      "https://source.unsplash.com/600x400?varanasi-aarti",
+      "https://source.unsplash.com/600x400?varanasi-ghats",
+      "https://source.unsplash.com/600x400?sarnath-temple"
     ],
     facilities: ["Hotel Stay", "Breakfast", "Guided Tour"],
-    packageDetails: "Includes aarti ceremony, boat ride, temple tour, and meals.",
+    packageDetails: "Aarti ceremony, boat ride, temple tour, meals.",
     averageRating: 4.6,
     region: "India"
   },
   {
     id: 15,
-    image: "https://source.unsplash.com/600x400/?Rome,ancient",
+    image: "https://source.unsplash.com/600x400?rome-ancient",
     placeName: "Rome Ancient Wonders",
     location: "Rome, Italy",
     date: "2026-06-10 - 2026-06-15",
@@ -424,22 +426,22 @@ export const tripData = [
     price: "$1500",
     colour: "bg-beige-100",
     category: ["cultural-trails", "exotic-trips"],
-    tags: ["history"],
-    description: "Explore Colosseum, Vatican, and timeless ruins in the cradle of Western civilization.",
+    tags: ["History", "Luxury"],
+    description: "Colosseum, Vatican, and ancient ruins in Rome.",
     nearestDestinations: ["Colosseum", "Vatican", "Pantheon"],
     galleryImages: [
-      "https://source.unsplash.com/600x400/?Rome,Colosseum",
-      "https://source.unsplash.com/600x400/?Vatican,city",
-      "https://source.unsplash.com/600x400/?Rome,ruins"
+      "https://source.unsplash.com/600x400?rome-colosseum",
+      "https://source.unsplash.com/600x400?vatican-city",
+      "https://source.unsplash.com/600x400?rome-ruins"
     ],
     facilities: ["Hotel Stay", "Breakfast", "Guided Tour"],
-    packageDetails: "Includes guided walking tours, museum entry, and local cuisine.",
+    packageDetails: "Walking tours, museum entry, local cuisine.",
     averageRating: 4.8,
     region: "Out of India"
   },
   {
     id: 16,
-    image: "https://source.unsplash.com/600x400/?Kyoto,temple",
+    image: "https://source.unsplash.com/600x400?kyoto-temple",
     placeName: "Kyoto Cultural Heritage",
     location: "Kyoto, Japan",
     date: "2026-04-20 - 2026-04-25",
@@ -448,22 +450,22 @@ export const tripData = [
     price: "$1300",
     colour: "bg-green-200",
     category: ["cultural-trails", "exotic-trips"],
-    tags: ["heritage"],
-    description: "Visit ancient temples, tea ceremonies, and geisha districts in historic Kyoto.",
+    tags: ["Heritage", "Peace"],
+    description: "Temples, tea ceremonies, and geisha districts in Kyoto.",
     nearestDestinations: ["Fushimi Inari", "Gion", "Kinkaku-ji"],
     galleryImages: [
-      "https://source.unsplash.com/600x400/?Kyoto,temple",
-      "https://source.unsplash.com/600x400/?Kyoto,geisha",
-      "https://source.unsplash.com/600x400/?Kyoto,architecture"
+      "https://source.unsplash.com/600x400?kyoto-temple",
+      "https://source.unsplash.com/600x400?kyoto-geisha",
+      "https://source.unsplash.com/600x400?kyoto-architecture"
     ],
     facilities: ["Hotel Stay", "Breakfast", "Guided Tour"],
-    packageDetails: "Includes temple visits, tea ceremony, walking tour, and local meals.",
+    packageDetails: "Temple visits, tea ceremony, walking tour, meals.",
     averageRating: 4.9,
     region: "Out of India"
   },
   {
     id: 17,
-    image: "https://source.unsplash.com/600x400/?Delhi,heritage",
+    image: "https://source.unsplash.com/600x400?delhi-heritage",
     placeName: "Delhi Heritage Walk",
     location: "Delhi, India",
     date: "2025-09-12 - 2025-09-14",
@@ -472,22 +474,22 @@ export const tripData = [
     price: "₹7,000",
     colour: "bg-amber-100",
     category: ["cultural-trails"],
-    tags: ["city"],
-    description: "Explore Red Fort, Humayun's Tomb, Chandni Chowk and street food delights.",
+    tags: ["Budget", "City"],
+    description: "Heritage walk through Red Fort, Humayun's Tomb, street food.",
     nearestDestinations: ["Red Fort", "Jama Masjid", "Chandni Chowk"],
     galleryImages: [
-      "https://source.unsplash.com/600x400/?Delhi,Fort",
-      "https://source.unsplash.com/600x400/?Delhi,market",
-      "https://source.unsplash.com/600x400/?Delhi,streetfood"
+      "https://source.unsplash.com/600x400?delhi-fort",
+      "https://source.unsplash.com/600x400?delhi-market",
+      "https://source.unsplash.com/600x400?delhi-streetfood"
     ],
     facilities: ["Hotel Stay", "Breakfast", "Guided Tour"],
-    packageDetails: "Includes heritage walk, monument entry, and local food tasting.",
+    packageDetails: "Heritage sites, monument entries, local food tasting.",
     averageRating: 4.5,
     region: "India"
   },
   {
     id: 18,
-    image: "https://source.unsplash.com/600x400/?Istanbul,heritage",
+    image: "https://source.unsplash.com/600x400?istanbul-mosque",
     placeName: "Istanbul Cultural Mosaic",
     location: "Istanbul, Turkey",
     date: "2026-05-15 - 2026-05-20",
@@ -496,23 +498,24 @@ export const tripData = [
     price: "$1100",
     colour: "bg-purple-100",
     category: ["cultural-trails", "exotic-trips"],
-    tags: ["history"],
-    description: "Discover Hagia Sophia, Blue Mosque, and vibrant bazaars melding East and West.",
+    tags: ["History", "Popular"],
+    description: "Hagia Sophia, Blue Mosque, and bazaars melding East and West.",
     nearestDestinations: ["Hagia Sophia", "Grand Bazaar", "Spice Market"],
     galleryImages: [
-      "https://source.unsplash.com/600x400/?Istanbul,mosque",
-      "https://source.unsplash.com/600x400/?Istanbul,bazaar",
-      "https://source.unsplash.com/600x400/?Istanbul,heritage"
+      "https://source.unsplash.com/600x400?istanbul-mosque",
+      "https://source.unsplash.com/600x400?istanbul-bazaar",
+      "https://source.unsplash.com/600x400?istanbul-heritage"
     ],
     facilities: ["Hotel Stay", "Breakfast", "Guided Tour"],
-    packageDetails: "Includes monument entries, guided tour, and local cuisine.",
+    packageDetails: "Monument entries, guided tours, local cuisine.",
     averageRating: 4.7,
     region: "Out of India"
   },
-  // Exotic Trips — At least 6
+
+  // Exotic Trips — 6
   {
     id: 19,
-    image: "https://source.unsplash.com/600x400/?Labuan,Bajo,Komodo",
+    image: "https://source.unsplash.com/600x400?komodo-dragon",
     placeName: "Labuan Bajo & Komodo",
     location: "Indonesia",
     date: "2026-07-01 - 2026-07-07",
@@ -521,22 +524,22 @@ export const tripData = [
     price: "$900",
     colour: "bg-cyan-100",
     category: ["exotic-trips", "adventure-trips"],
-    tags: ["unique"],
-    description: "Explore Komodo dragons and stunning Indonesian landscapes—less touristy than Bali. :contentReference[oaicite:4]{index=4}",
+    tags: ["Unique", "Popular"],
+    description: "Komodo dragons and less-crowded Indonesian landscapes.",
     nearestDestinations: ["Komodo National Park", "Rinca Island", "Padar Island"],
     galleryImages: [
-      "https://source.unsplash.com/600x400/?Komodo,dragon",
-      "https://source.unsplash.com/600x400/?Labuan,Bajo",
-      "https://source.unsplash.com/600x400/?Indonesia,island"
+      "https://source.unsplash.com/600x400?komodo-dragon",
+      "https://source.unsplash.com/600x400?labuan-bajo",
+      "https://source.unsplash.com/600x400?indonesia-island"
     ],
     facilities: ["Boat Stay", "Breakfast", "Guided Tour"],
-    packageDetails: "Includes boat cruise, trekking to see Komodo dragons, snorkeling.",
+    packageDetails: "Boat cruise, Komodo trek, snorkeling.",
     averageRating: 4.7,
     region: "Out of India"
   },
   {
     id: 20,
-    image: "https://source.unsplash.com/600x400/?Underwater,scuba",
+    image: "https://source.unsplash.com/600x400?andaman-scuba",
     placeName: "Andaman Scuba & Reef",
     location: "Andaman & Nicobar, India",
     date: "2025-11-10 - 2025-11-15",
@@ -545,22 +548,22 @@ export const tripData = [
     price: "₹45,000",
     colour: "bg-blue-300",
     category: ["exotic-trips", "adventure-trips", "beach-getaway"],
-    tags: ["scuba","popular"],
-    description: "Explore coral reefs and marine life in the clear waters of Andaman. :contentReference[oaicite:5]{index=5}",
+    tags: ["Scuba", "Early Bird"],
+    description: "Coral reefs and rich marine life in clear Andaman waters.",
     nearestDestinations: ["Havelock Island", "Neil Island", "Ross Island"],
     galleryImages: [
-      "https://source.unsplash.com/600x400/?Andaman,scuba",
-      "https://source.unsplash.com/600x400/?Andaman,reef",
-      "https://source.unsplash.com/600x400/?Andaman,marine"
+      "https://source.unsplash.com/600x400?andaman-scuba",
+      "https://source.unsplash.com/600x400?andaman-reef",
+      "https://source.unsplash.com/600x400?andaman-marine"
     ],
     facilities: ["Hotel Stay", "Breakfast", "Scuba Diving", "Boat Trips"],
-    packageDetails: "Includes scuba sessions, snorkeling, island hop, and meals.",
+    packageDetails: "Scuba sessions, snorkeling, island hopping, meals.",
     averageRating: 4.8,
     region: "India"
   },
   {
     id: 21,
-    image: "https://source.unsplash.com/600x400/?Mauritius,beach",
+    image: "https://source.unsplash.com/600x400?mauritius-beach",
     placeName: "Mauritius Island Escape",
     location: "Mauritius",
     date: "2026-02-20 - 2026-02-25",
@@ -569,22 +572,22 @@ export const tripData = [
     price: "$1100",
     colour: "bg-lightblue-100",
     category: ["exotic-trips", "beach-getaway"],
-    tags: ["romantic"],
-    description: "Picturesque island with beaches, waterfalls, and a tranquil tropical vibe.",
+    tags: ["Romantic", "Luxury"],
+    description: "Beaches, waterfalls, and serene tropical vibes.",
     nearestDestinations: ["Port Louis", "Chamarel", "Le Morne"],
     galleryImages: [
-      "https://source.unsplash.com/600x400/?Mauritius,beach",
-      "https://source.unsplash.com/600x400/?Mauritius,waterfall",
-      "https://source.unsplash.com/600x400/?Mauritius,island"
+      "https://source.unsplash.com/600x400?mauritius-beach",
+      "https://source.unsplash.com/600x400?mauritius-waterfall",
+      "https://source.unsplash.com/600x400?mauritius-island"
     ],
     facilities: ["Hotel Stay", "Breakfast", "Guided Tour"],
-    packageDetails: "Includes island tour, waterfalls, beach dinners, and cultural visits.",
+    packageDetails: "Island tours, waterfalls, beach dinners, cultural visits.",
     averageRating: 4.7,
     region: "Out of India"
   },
   {
     id: 22,
-    image: "https://source.unsplash.com/600x400/?Thailand,beach",
+    image: "https://source.unsplash.com/600x400?thailand-island",
     placeName: "Thailand Island Hopping",
     location: "Thailand",
     date: "2026-03-05 - 2026-03-10",
@@ -593,22 +596,22 @@ export const tripData = [
     price: "$700",
     colour: "bg-green-300",
     category: ["exotic-trips", "beach-getaway", "adventure-trips"],
-    tags: ["offer","popular"],
-    description: "Enjoy crystal-clear seas, snorkeling, and vibrant tropical islands.",
+    tags: ["Offer", "Group"],
+    description: "Crisp seas, snorkeling, and tropical island hopping.",
     nearestDestinations: ["Phuket", "Phi Phi Islands", "Krabi"],
     galleryImages: [
-      "https://source.unsplash.com/600x400/?Thailand,island",
-      "https://source.unsplash.com/600x400/?PhiPhi,beach",
-      "https://source.unsplash.com/600x400/?Krabi,sea"
+      "https://source.unsplash.com/600x400?thailand-island",
+      "https://source.unsplash.com/600x400?phiphi-beach",
+      "https://source.unsplash.com/600x400?krabi-sea"
     ],
     facilities: ["Hotel Stay", "Breakfast", "Boat Tours", "Snorkeling"],
-    packageDetails: "Includes boat hop, snorkeling, beach stays, and island meals.",
+    packageDetails: "Boat hop, snorkeling, beach stays, island meals.",
     averageRating: 4.6,
     region: "Out of India"
   },
   {
     id: 23,
-    image: "https://source.unsplash.com/600x400/?Seychelles,beach",
+    image: "https://source.unsplash.com/600x400?seychelles-beach",
     placeName: "Seychelles Paradise",
     location: "Seychelles",
     date: "2026-04-01 - 2026-04-06",
@@ -617,22 +620,22 @@ export const tripData = [
     price: "$1300",
     colour: "bg-pink-200",
     category: ["exotic-trips", "beach-getaway"],
-    tags: [],
-    description: "White-sand beaches, lush tropical forests and reef-protected lagoons.",
+    tags: ["New", "Scenic"],
+    description: "White-sand beaches, tropical forests, reef-protected lagoons.",
     nearestDestinations: ["Mahe", "Praslin", "La Digue"],
     galleryImages: [
-      "https://source.unsplash.com/600x400/?Seychelles,beach",
-      "https://source.unsplash.com/600x400/?Seychelles,island",
-      "https://source.unsplash.com/600x400/?Seychelles,lagoon"
+      "https://source.unsplash.com/600x400?seychelles-beach",
+      "https://source.unsplash.com/600x400?seychelles-island",
+      "https://source.unsplash.com/600x400?seychelles-lagoon"
     ],
     facilities: ["Hotel Stay", "Breakfast", "Guided Tour"],
-    packageDetails: "Includes island tours, beach dinners, nature walks and spa.",
+    packageDetails: "Island tours, beach dinners, nature walks, spa.",
     averageRating: 4.8,
     region: "Out of India"
   },
   {
     id: 24,
-    image: "https://source.unsplash.com/600x400/?Dubai,desert,city",
+    image: "https://source.unsplash.com/600x400?dubai-desert",
     placeName: "Dubai City & Desert",
     location: "Dubai, UAE",
     date: "2026-01-10 - 2026-01-15",
@@ -641,23 +644,24 @@ export const tripData = [
     price: "$900",
     colour: "bg-yellow-300",
     category: ["exotic-trips", "cultural-trails"],
-    tags: ["city"],
-    description: "Modern city meets desert dunes—skyline views, desert safari, and Arabian culture.",
+    tags: ["City", "Popular"],
+    description: "Skyline views, desert safari, and Arabian culture.",
     nearestDestinations: ["Burj Khalifa", "Desert Safari", "Dubai Mall"],
     galleryImages: [
-      "https://source.unsplash.com/600x400/?Dubai,city",
-      "https://source.unsplash.com/600x400/?Dubai,desert",
-      "https://source.unsplash.com/600x400/?Burj,sky"
+      "https://source.unsplash.com/600x400?dubai-city",
+      "https://source.unsplash.com/600x400?dubai-desert",
+      "https://source.unsplash.com/600x400?burj-khalifa"
     ],
     facilities: ["Hotel Stay", "Breakfast", "Guided Tour", "Safari"],
-    packageDetails: "Includes city tour, desert safari, dune dinner, and mall visit.",
+    packageDetails: "City tour, desert safari, dune dinner, mall visit.",
     averageRating: 4.5,
     region: "Out of India"
   },
-  // Hidden Gems — At least 6
+
+  // Hidden Gems — 6
   {
     id: 25,
-    image: "https://source.unsplash.com/600x400/?Butterfly,Beach,Goa",
+    image: "https://source.unsplash.com/600x400?butterfly-beach-goa",
     placeName: "Butterfly Beach Goa",
     location: "Goa, India",
     date: "2025-10-10 - 2025-10-12",
@@ -666,22 +670,22 @@ export const tripData = [
     price: "₹12,000",
     colour: "bg-rose-100",
     category: ["hidden-gems", "beach-getaway"],
-    tags: ["secluded"],
-    description: "Accessible only by boat or trek, secluded beach with pristine sands. :contentReference[oaicite:6]{index=6}",
+    tags: ["Secluded", "New"],
+    description: "Secluded beach only accessible via boat or trek.",
     nearestDestinations: ["Palolem", "Agonda", "Cola Beach"],
     galleryImages: [
-      "https://source.unsplash.com/600x400/?Butterfly,Beach",
-      "https://source.unsplash.com/600x400/?Secluded,Goa",
-      "https://source.unsplash.com/600x400/?Goa,hidden"
+      "https://source.unsplash.com/600x400?butterfly-beach",
+      "https://source.unsplash.com/600x400?secluded-goa",
+      "https://source.unsplash.com/600x400?goa-hidden"
     ],
     facilities: ["Camp Stay", "Breakfast", "Boat Transfer"],
-    packageDetails: "Boat ride, camping, beach time, and meal package included.",
+    packageDetails: "Boat, camping, beach time, meals.",
     averageRating: 4.6,
     region: "India"
   },
   {
     id: 26,
-    image: "https://source.unsplash.com/600x400/?Gokarna,OmBeach",
+    image: "https://source.unsplash.com/600x400?gokarna-om-beach",
     placeName: "Gokarna Om Beach Retreat",
     location: "Karnataka, India",
     date: "2025-11-05 - 2025-11-08",
@@ -690,22 +694,22 @@ export const tripData = [
     price: "₹14,000",
     colour: "bg-orange-200",
     category: ["hidden-gems", "beach-getaway"],
-    tags: ["spiritual"],
-    description: "Cliff-side treks and peaceful beach with spiritual energy. :contentReference[oaicite:7]{index=7}",
+    tags: ["Spiritual", "Budget"],
+    description: "Cliff-side treks and peaceful spiritual beach.",
     nearestDestinations: ["Gokarna Temple", "Half Moon Beach", "Paradise Beach"],
     galleryImages: [
-      "https://source.unsplash.com/600x400/?Gokarna,beach",
-      "https://source.unsplash.com/600x400/?OmBeach,cliff",
-      "https://source.unsplash.com/600x400/?Karnataka,coast"
+      "https://source.unsplash.com/600x400?gokarna-beach",
+      "https://source.unsplash.com/600x400?om-beach-cliff",
+      "https://source.unsplash.com/600x400?karnataka-coast"
     ],
     facilities: ["Hotel Stay", "Breakfast", "Guided Walk"],
-    packageDetails: "Includes trek, beach time, local food, and stay.",
+    packageDetails: "Trek, beach time, local food, stay.",
     averageRating: 4.5,
     region: "India"
   },
   {
     id: 27,
-    image: "https://source.unsplash.com/600x400/?Hidden,Valley,India",
+    image: "https://source.unsplash.com/600x400?spiti-valley",
     placeName: "Spiti Valley Offbeat",
     location: "Spiti Valley, India",
     date: "2026-06-01 - 2026-06-07",
@@ -714,22 +718,22 @@ export const tripData = [
     price: "₹35,000",
     colour: "bg-blue-400",
     category: ["hidden-gems", "mountains", "adventure-trips"],
-    tags: ["offbeat"],
-    description: "High-altitude valley with sparse population and stark natural beauty.",
+    tags: ["Offbeat", "Adventure"],
+    description: "High-altitude valley, sparse population, stark beauty.",
     nearestDestinations: ["Kaza", "Key Monastery", "Chandratal Lake"],
     galleryImages: [
-      "https://source.unsplash.com/600x400/?Spiti,Valley",
-      "https://source.unsplash.com/600x400/?Spiti,monastery",
-      "https://source.unsplash.com/600x400/?Spiti,landscape"
+      "https://source.unsplash.com/600x400?spiti-valley",
+      "https://source.unsplash.com/600x400?spiti-monastery",
+      "https://source.unsplash.com/600x400?spiti-landscape"
     ],
     facilities: ["Camp Stay", "Breakfast", "Guided Tour"],
-    packageDetails: "Includes road trip, campsite, monastery visits, and meals.",
+    packageDetails: "Road trip, campsite, monastery visits, meals.",
     averageRating: 4.6,
     region: "India"
   },
   {
     id: 28,
-    image: "https://source.unsplash.com/600x400/?Bhutan,landscape",
+    image: "https://source.unsplash.com/600x400?bhutan-landscape",
     placeName: "Bhutan Offbeat Himalayan",
     location: "Bhutan",
     date: "2026-03-15 - 2026-03-20",
@@ -738,338 +742,377 @@ export const tripData = [
     price: "$800",
     colour: "bg-green-400",
     category: ["hidden-gems", "cultural-trails"],
-    tags: ["serene"],
+    tags: ["Serene", "New"],
     description: "Peaceful Himalayan kingdom with monasteries and pristine nature.",
     nearestDestinations: ["Paro", "Thimphu", "Tiger's Nest"],
     galleryImages: [
-      "https://source.unsplash.com/600x400/?Bhutan,monastery",
-      "https://source.unsplash.com/600x400/?Bhutan,landscape",
-      "https://source.unsplash.com/600x400/?Bhutan,trek"
+      "https://source.unsplash.com/600x400?bhutan-monastery",
+      "https://source.unsplash.com/600x400?bhutan-landscape",
+      "https://source.unsplash.com/600x400?bhutan-trek"
     ],
     facilities: ["Hotel Stay", "Breakfast", "Guided Tour"],
-    packageDetails: "Includes temple visits, mountain walks, and cultural tours.",
+    packageDetails: "Temple visits, mountain walks, cultural tours.",
     averageRating: 4.8,
     region: "Out of India"
   },
   {
     id: 29,
-    image: "https://source.unsplash.com/600x400/?Andaman,hidden,beach",
+    image: "https://source.unsplash.com/600x400?little-andaman",
     placeName: "Little Andaman Explorer",
     location: "Andaman & Nicobar, India",
     date: "2026-02-10 - 2026-02-14",
     startDate: "2026-02-10",
     endDate: "2026-02-14",
     price: "₹40,000",
-    colour: "bg-purple-200",
+    colour: "bg-purple-200",  
     category: ["hidden-gems", "adventure-trips", "exotic-trips"],
-    tags: ["undiscovered"],
-    description: "Remote island with waterfalls, jungles, and untouched beaches.",
-    nearestDestinations: ["Havelock", "Neil Island", "Ross Island"],
-    galleryImages: [
-      "https://source.unsplash.com/600x400/?Little,Andaman",
-      "https://source.unsplash.com/600x400/?Andaman,waterfall",
-      "https://source.unsplash.com/600x400/?Andaman,jungle"
-    ],
-    facilities: ["Camp Stay", "Breakfast", "Boat Transfer", "Guided Tour"],
-    packageDetails: "Includes boat ride, waterfall trek, jungle walk, and beach time.",
-    averageRating: 4.7,
-    region: "India"
-  },
-  {
-    id: 30,
-    image: "https://source.unsplash.com/600x400/?Kaziranga,landscape",
-    placeName: "Kaziranga Wilderness Lodge",
-    location: "Assam, India",
-    date: "2026-01-05 - 2026-01-09",
-    startDate: "2026-01-05",
-    endDate: "2026-01-09",
-    price: "₹28,000",
-    colour: "bg-lime-100",
-    category: ["hidden-gems", "cultural-trails"],
-    tags: ["wildlife"],
-    description: "Stay near Kaziranga National Park with wildlife safaris and lodge comfort.",
-    nearestDestinations: ["Kaziranga NP", "Rhinoceros Sanctuary", "Assam Tea Gardens"],
-    galleryImages: [
-      "https://source.unsplash.com/600x400/?Kaziranga,elephant",
-      "https://source.unsplash.com/600x400/?Kaziranga,lodge",
-      "https://source.unsplash.com/600x400/?Assam,tea"
-    ],
-    facilities: ["Lodge Stay", "Breakfast", "Safari", "Guide"],
-    packageDetails: "Includes lodge stay, wildlife safari, tea garden tour, and meals.",
-    averageRating: 4.6,
-    region: "India"
-  },
-  // Mountains — At least 6
-  {
-    id: 31,
-    image: "https://source.unsplash.com/600x400/?Swiss,mountains",
-    placeName: "Swiss Alpine Serenity",
-    location: "Switzerland",
-    date: "2026-07-10 - 2026-07-15",
-    startDate: "2026-07-10",
-    endDate: "2026-07-15",
-    price: "$1800",
-    colour: "bg-white",
-    category: ["mountains", "exotic-trips"],
-    tags: ["scenic","popular"],
-    description: "High mountain lakes, alpine villages and cable car rides in Swiss Alps.",
-    nearestDestinations: ["Matterhorn", "Lauterbrunnen", "Zermatt"],
-    galleryImages: [
-      "https://source.unsplash.com/600x400/?Swiss,alps",
-      "https://source.unsplash.com/600x400/?Switzerland,lake",
-      "https://source.unsplash.com/600x400/?Swiss,cablecar"
-    ],
-    facilities: ["Hotel Stay", "Breakfast", "Guided Tour"],
-    packageDetails: "Includes cable car, village tours, lake cruise, and meals.",
-    averageRating: 4.9,
-    region: "Out of India"
-  },
-  {
-    id: 32,
-    image: "https://source.unsplash.com/600x400/?Himachal,mountains",
-    placeName: "Himachal Hillstation Circuit",
-    location: "Himachal Pradesh, India",
-    date: "2026-05-20 - 2026-05-27",
-    startDate: "2026-05-20",
-    endDate: "2026-05-27",
-    price: "₹28,000",
-    colour: "bg-blue-100",
-    category: ["mountains", "hidden-gems"],
-    tags: ["scenic"],
-    description: "Explore Manali, Kasol, and Kullu with mountain views and tranquil valleys. :contentReference[oaicite:8]{index=8}",
-    nearestDestinations: ["Manali", "Kasol", "Kullu"],
-    galleryImages: [
-      "https://source.unsplash.com/600x400/?Himachal,Manali",
-      "https://source.unsplash.com/600x400/?Kasol,valley",
-      "https://source.unsplash.com/600x400/?Kullu,landscape"
-    ],
-    facilities: ["Hotel Stay", "Breakfast", "Guided Tour"],
-    packageDetails: "Includes hillstation stay, valley walks, and village tours.",
-    averageRating: 4.7,
-    region: "India"
-  },
-  {
-    id: 33,
-    image: "https://source.unsplash.com/600x400/?Iceland,mountains",
-    placeName: "Iceland Glacier Hike",
-    location: "Iceland",
-    date: "2026-03-25 - 2026-03-30",
-    startDate: "2026-03-25",
-    endDate: "2026-03-30",
-    price: "$2000",
-    colour: "bg-gray-400",
-    category: ["mountains", "exotic-trips"],
-    tags: ["unique"],
-    description: "Glacial hikes,Northern lights, and Icelandic wilderness.",
-    nearestDestinations: ["Vatnajökull Glacier", "Reykjavik", "Golden Circle"],
-    galleryImages: [
-      "https://source.unsplash.com/600x400/?Iceland,glacier",
-      "https://source.unsplash.com/600x400/?Iceland,northernlights",
-      "https://source.unsplash.com/600x400/?Iceland,wilderness"
-    ],
-    facilities: ["Camp Stay", "Breakfast", "Guide"],
-    packageDetails: "Includes glacier hike, aurora watch, golden circle tour.",
-    averageRating: 4.8,
-    region: "Out of India"
-  },
-  {
-    id: 34,
-    image: "https://source.unsplash.com/600x400/?Nepal,mountains",
-    placeName: "Annapurna Base Camp Trek",
-    location: "Nepal",
-    date: "2026-04-10 - 2026-04-20",
-    startDate: "2026-04-10",
-    endDate: "2026-04-20",
-    price: "$1400",
-    colour: "bg-brown-200",
-    category: ["mountains", "adventure-trips"],
-    tags: ["trek"],
-    description: "Classic trek to Annapurna base camp with tea-house stays and Himalayan vistas.",
-    nearestDestinations: ["Pokhara", "Ghorepani", "Poon Hill"],
-    galleryImages: [
-      "https://source.unsplash.com/600x400/?Annapurna,trek",
-      "https://source.unsplash.com/600x400/?Nepal,teaHouse",
-      "https://source.unsplash.com/600x400/?Himalaya,view"
-    ],
-    facilities: ["Camp Stay", "Breakfast", "Guide", "Porter"],
-    packageDetails: "Includes permits, meals, tea-house lodging, and guide.",
-    averageRating: 4.8,
-    region: "Out of India"
-  },
-  {
-    id: 35,
-    image: "https://source.unsplash.com/600x400/?Kashmir,mountains",
-    placeName: "Kashmir Valley Retreat",
-    location: "Kashmir, India",
-    date: "2025-09-25 - 2025-10-02",
-    startDate: "2025-09-25",
-    endDate: "2025-10-02",
-    price: "₹35,000",
-    colour: "bg-cyan-200",
-    category: ["mountains", "cultural-trails"],
-    tags: ["scenic,offer"],
-    description: "Shikara rides on Dal Lake, houseboats, and mountain views in Kashmir Valley.",
-    nearestDestinations: ["Srinagar", "Gulmarg", "Pahalgam"],
-    galleryImages: [
-      "https://source.unsplash.com/600x400/?Kashmir,dalLake",
-      "https://source.unsplash.com/600x400/?Houseboat,Kashmir",
-      "https://source.unsplash.com/600x400/?Gulmarg,mountains"
-    ],
-    facilities: ["Houseboat Stay", "Breakfast", "Shikara Ride", "Guided Tour"],
-    packageDetails: "Includes houseboat, shikara, valley tours, and meals.",
-    averageRating: 4.7,
-    region: "India"
-  },
-  {
-    id: 36,
-    image: "https://source.unsplash.com/600x400/?Patagonia,mountains",
-    placeName: "Patagonia Wilderness Trek",
-    location: "Patagonia, Chile",
-    date: "2026-03-01 - 2026-03-10",
-    startDate: "2026-03-01",
-    endDate: "2026-03-10",
-    price: "$2500",
-    colour: "bg-teal-200",
-    category: ["mountains", "exotic-trips", "adventure-trips"],
-    tags: ["challenging"],
-    description: "Untamed landscapes, glacial views, and remote trekking in Patagonia.",
-    nearestDestinations: ["Torres del Paine", "El Chaltén", "Perito Moreno"],
-    galleryImages: [
-      "https://source.unsplash.com/600x400/?Patagonia,mountains",
-      "https://source.unsplash.com/600x400/?Glacier,Chile",
-      "https://source.unsplash.com/600x400/?Patagonia,trail"
-    ],
-    facilities: ["Camp Stay", "Breakfast", "Guide"],
-    packageDetails: "Includes multi-day trek, camps, meals, and guide.",
-    averageRating: 4.9,
-    region: "Out of India"
-  },
-  // Extra to ensure 40 total (we're at 36) — spread extras across categories
-  {
-    id: 37,
-    image: "https://source.unsplash.com/600x400/?SriLanka,beach",
-    placeName: "Sri Lanka Tropical Coast",
-    location: "Sri Lanka",
-    date: "2026-02-05 - 2026-02-10",
-    startDate: "2026-02-05",
-    endDate: "2026-02-10",
-    price: "$600",
-    colour: "bg-yellow-400",
-    category: ["beach-getaway", "exotic-trips"],
-    tags: ["popular"],
-    description: "Golden beaches, surf spots, and rich culture in Sri Lanka’s south coast.",
-    nearestDestinations: ["Bentota", "Mirissa", "Galle"],
-    galleryImages: [
-      "https://source.unsplash.com/600x400/?SriLanka,beach",
-      "https://source.unsplash.com/600x400/?Mirissa,waves",
-      "https://source.unsplash.com/600x400/?Galle,fort"
-    ],
-    facilities: ["Hotel Stay", "Breakfast", "Surfing", "Guided Tour"],
-    packageDetails: "Includes surf lessons, beach stays, and cultural day trip.",
-    averageRating: 4.6,
-    region: "Out of India"
-  },
-  {
-    id: 38,
-    image: "https://source.unsplash.com/600x400/?Rajasthan,forts",
-    placeName: "Rajasthan Cultural Trail",
-    location: "Rajasthan, India",
-    date: "2025-11-10 - 2025-11-17",
-    startDate: "2025-11-10",
-    endDate: "2025-11-17",
-    price: "₹25,000",
-    colour: "bg-orange-300",
-    category: ["cultural-trails", "hidden-gems"],
-    tags: ["heritage"],
-    description: "Explore forts and palaces of Jaipur, Jodhpur, and Udaipur.",
-    nearestDestinations: ["Jaipur", "Jodhpur", "Udaipur"],
-    galleryImages: [
-      "https://source.unsplash.com/600x400/?Jaipur,fort",
-      "https://source.unsplash.com/600x400/?Jodhpur,palace",
-      "https://source.unsplash.com/600x400/?Udaipur,lake"
-    ],
-    facilities: ["Hotel Stay", "Breakfast", "Guided Tour"],
-    packageDetails: "Includes palace visits, heritage walk, and meals.",
-    averageRating: 4.7,
-    region: "India"
-  },
-  {
-    id: 39,
-    image: "https://source.unsplash.com/600x400/?Ski,Lake,Tahoe",
-    placeName: "Lake Tahoe Ski & Stay",
-    location: "USA",
-    date: "2026-01-20 - 2026-01-25",
-    startDate: "2026-01-20",
-    endDate: "2026-01-25",
-    price: "$1400",
-    colour: "bg-blue-500",
-    category: ["mountains", "adventure-trips", "exotic-trips"],
-    tags: ["ski"],
-    description: "Snowy slopes and pristine lake views at Lake Tahoe for skiing and relaxation.",
-    nearestDestinations: ["Heavenly Stat", "Squaw Valley", "Sand Harbor"],
-    galleryImages: [
-      "https://source.unsplash.com/600x400/?LakeTahoe,ski",
-      "https://source.unsplash.com/600x400/?Tahoe,lake",
-      "https://source.unsplash.com/600x400/?Tahoe,slopes"
-    ],
-    facilities: ["Hotel Stay", "Breakfast", "Ski Pass", "Guided Tour"],
-    packageDetails: "Includes ski day pass, gondola ride, lakeside stay, and meals.",
-    averageRating: 4.8,
-    region: "Out of India"
-  },
-  {
-    id: 40,
-    image: "https://source.unsplash.com/600x400/?Nepal,monastery",
-    placeName: "Nepal Monastery Trail",
-    location: "Nepal",
-    date: "2026-05-05 - 2026-05-09",
-    startDate: "2026-05-05",
-    endDate: "2026-05-09",
-    price: "$700",
-    colour: "bg-purple-400",
-    category: ["cultural-trails", "hidden-gems"],
-    tags: ["spiritual"],
-    description: "Visit monasteries near Kathmandu and get a peaceful Himalayan cultural experience.",
-    nearestDestinations: ["Boudhanath", "Swayambhunath", "Patan"],
-    galleryImages: [
-      "https://source.unsplash.com/600x400/?Boudhanath,stupa",
-      "https://source.unsplash.com/600x400/?Swayambhunath,monkeyTempl",
-      "https://source.unsplash.com/600x400/?Nepal,heritage"
-    ],
-    facilities: ["Hotel Stay", "Breakfast", "Guided Tour"],
-    packageDetails: "Includes temple visits, heritage walk, and meals.",
-    averageRating: 4.6,
-    region: "Out of India"
-  }
+    tags: ["Undiscovered", "Family"],
+    description: "Remote island with waterfalls, jungles, untouched beaches.",  
+    nearestDestinations: ["Havelock", "Neil Island", "Ross Island"],  
+    galleryImages: [  
+      "https://source.unsplash.com/600x400?little-andaman",  
+      "https://source.unsplash.com/600x400?andaman-waterfall",  
+      "https://source.unsplash.com/600x400?andaman-jungle"  
+    ],  
+    facilities: ["Camp Stay", "Breakfast", "Boat Transfer", "Guided Tour"],  
+    packageDetails: "Boat ride, waterfall trek, jungle walk, beach time.",  
+    averageRating: 4.7,  
+    region: "India"  
+  },  
+  {  
+    id: 30,  
+    image: "https://source.unsplash.com/600x400?kaziranga-elephant",  
+    placeName: "Kaziranga Wilderness Lodge",  
+    location: "Assam, India",  
+    date: "2026-01-05 - 2026-01-09",  
+    startDate: "2026-01-05",  
+    endDate: "2026-01-09",  
+    price: "₹28,000",  
+    colour: "bg-lime-100",  
+    category: ["hidden-gems", "cultural-trails"],  
+    tags: ["Wildlife", "Popular"],  
+    description: "Stay near Kaziranga NP with wildlife safaris and lodge comfort.",  
+    nearestDestinations: ["Kaziranga NP", "Rhinoceros Sanctuary", "Assam Tea Gardens"],  
+    galleryImages: [  
+      "https://source.unsplash.com/600x400?kaziranga-elephant",  
+      "https://source.unsplash.com/600x400?kaziranga-lodge",  
+      "https://source.unsplash.com/600x400?assam-tea"  
+    ],  
+    facilities: ["Lodge Stay", "Breakfast", "Safari", "Guide"],  
+    packageDetails: "Lodge stay, wildlife safaris, tea garden tour, meals.",  
+    averageRating: 4.6,  
+    region: "India"  
+  },  
+
+  // Mountains — 6  
+  {  
+    id: 31,  
+    image: "https://source.unsplash.com/600x400?swiss-alps",  
+    placeName: "Swiss Alpine Serenity",  
+    location: "Switzerland",  
+    date: "2026-07-10 - 2026-07-15",  
+    startDate: "2026-07-10",  
+    endDate: "2026-07-15",  
+    price: "$1800",  
+    colour: "bg-white",  
+    category: ["mountains", "exotic-trips"],  
+    tags: ["Scenic", "Luxury"],  
+    description: "Alpine lakes, villages and cable cars in the Swiss Alps.",  
+    nearestDestinations: ["Matterhorn", "Lauterbrunnen", "Zermatt"],  
+    galleryImages: [  
+      "https://source.unsplash.com/600x400?swiss-alps",  
+      "https://source.unsplash.com/600x400?switzerland-lake",  
+      "https://source.unsplash.com/600x400?swiss-cablecar"  
+    ],  
+    facilities: ["Hotel Stay", "Breakfast", "Guided Tour"],  
+    packageDetails: "Cable car rides, village tours, lake cruise, meals.",  
+    averageRating: 4.9,  
+    region: "Out of India"  
+  },  
+  {  
+    id: 32,  
+    image: "https://source.unsplash.com/600x400?himachal-manali",  
+    placeName: "Himachal Hillstation Circuit",  
+    location: "Himachal Pradesh, India",  
+    date: "2026-05-20 - 2026-05-27",  
+    startDate: "2026-05-20",  
+    endDate: "2026-05-27",  
+    price: "₹28,000",  
+    colour: "bg-blue-100",  
+    category: ["mountains", "hidden-gems"],  
+    tags: ["Scenic", "Family"],  
+    description: "Explore Manali, Kasol, Kullu with tranquil valleys.",  
+    nearestDestinations: ["Manali", "Kasol", "Kullu"],  
+    galleryImages: [  
+      "https://source.unsplash.com/600x400?himachal-manali",  
+      "https://source.unsplash.com/600x400?kasol-valley",  
+      "https://source.unsplash.com/600x400?kullu-landscape"  
+    ],  
+    facilities: ["Hotel Stay", "Breakfast", "Guided Tour"],  
+    packageDetails: "Hillstation stays, village walks, tours.",  
+    averageRating: 4.7,  
+    region: "India"  
+  },  
+  {  
+    id: 33,  
+    image: "https://source.unsplash.com/600x400?iceland-glacier",  
+    placeName: "Iceland Glacier Hike",  
+    location: "Iceland",  
+    date: "2026-03-25 - 2026-03-30",  
+    startDate: "2026-03-25",  
+    endDate: "2026-03-30",  
+    price: "$2000",  
+    colour: "bg-gray-400",  
+    category: ["mountains", "exotic-trips"],  
+    tags: ["Unique", "Adventure"],  
+    description: "Glacial hikes, Northern Lights, Icelandic wilderness.",  
+    nearestDestinations: ["Vatnajökull Glacier", "Reykjavik", "Golden Circle"],  
+    galleryImages: [  
+      "https://source.unsplash.com/600x400?iceland-glacier",  
+      "https://source.unsplash.com/600x400?iceland-northernlights",  
+      "https://source.unsplash.com/600x400?iceland-wilderness"  
+    ],  
+    facilities: ["Camp Stay", "Breakfast", "Guide"],  
+    packageDetails: "Glacier hikes, aurora watching, Golden Circle tour.",  
+    averageRating: 4.8,  
+    region: "Out of India"  
+  },  
+  {  
+    id: 34,  
+    image: "https://source.unsplash.com/600x400?annapurna-trek",  
+    placeName: "Annapurna Base Camp Trek",  
+    location: "Nepal",  
+    date: "2026-04-10 - 2026-04-20",  
+    startDate: "2026-04-10",  
+    endDate: "2026-04-20",  
+    price: "$1400",  
+    colour: "bg-brown-200",  
+    category: ["mountains", "adventure-trips"],  
+    tags: ["Trek", "Challenging"],  
+    description: "Classic trek to Annapurna Base Camp with Himalayan views.",  
+    nearestDestinations: ["Pokhara", "Ghorepani", "Poon Hill"],  
+    galleryImages: [  
+      "https://source.unsplash.com/600x400?annapurna-trek",  
+      "https://source.unsplash.com/600x400?nepal-teahouse",  
+      "https://source.unsplash.com/600x400?himalaya-view"  
+    ],  
+    facilities: ["Camp Stay", "Breakfast", "Guide", "Porter"],  
+    packageDetails: "Permits, meals, lodging, guide, porter.",  
+    averageRating: 4.8,  
+    region: "Out of India"  
+  },  
+  {  
+    id: 35,  
+    image: "https://source.unsplash.com/600x400?kashmir-houseboat",  
+    placeName: "Kashmir Valley Retreat",  
+    location: "Kashmir, India",  
+    date: "2025-09-25 - 2025-10-02",  
+    startDate: "2025-09-25",  
+    endDate: "2025-10-02",  
+    price: "₹35,000",  
+    colour: "bg-cyan-200",  
+    category: ["mountains", "cultural-trails"],  
+    tags: ["Scenic", "Romantic"],  
+    description: "Houseboats, shikara rides, and mountain views in Kashmir Valley.",  
+    nearestDestinations: ["Srinagar", "Gulmarg", "Pahalgam"],  
+    galleryImages: [  
+      "https://source.unsplash.com/600x400?kashmir-dal-lake",  
+      "https://source.unsplash.com/600x400?houseboat-kashmir",  
+      "https://source.unsplash.com/600x400?gulmarg-mountains"  
+    ],  
+    facilities: ["Houseboat Stay", "Breakfast", "Shikara Ride", "Guided Tour"],  
+    packageDetails: "Houseboat stay, shikara ride, valley tours, meals.",  
+    averageRating: 4.7,  
+    region: "India"  
+  },  
+  {  
+    id: 36,  
+    image: "https://source.unsplash.com/600x400?patagonia-trek",  
+    placeName: "Patagonia Wilderness Trek",  
+    location: "Patagonia, Chile",  
+    date: "2026-03-01 - 2026-03-10",  
+    startDate: "2026-03-01",  
+    endDate: "2026-03-10",  
+    price: "$2500",  
+    colour: "bg-teal-200",  
+    category: ["mountains", "exotic-trips", "adventure-trips"],  
+    tags: ["Challenging", "Rare"],  
+    description: "Remote treks, glaciers, and untamed landscapes in Patagonia.",  
+    nearestDestinations: ["Torres del Paine", "El Chaltén", "Perito Moreno"],  
+    galleryImages: [  
+      "https://source.unsplash.com/600x400?patagonia-mountains",  
+      "https://source.unsplash.com/600x400?glacier-chile",  
+      "https://source.unsplash.com/600x400?patagonia-trail"  
+    ],  
+    facilities: ["Camp Stay", "Breakfast", "Guide"],  
+    packageDetails: "Multi-day trek, camps, guide, meals.",  
+    averageRating: 4.9,  
+    region: "Out of India"  
+  },  
+
+  // Extras to reach 40 — 4 more spread across categories  
+  {  
+    id: 37,  
+    image: "https://source.unsplash.com/600x400?sri-lanka-beach",  
+    placeName: "Sri Lanka Tropical Coast",  
+    location: "Sri Lanka",  
+    date: "2026-02-05 - 2026-02-10",  
+    startDate: "2026-02-05",  
+    endDate: "2026-02-10",  
+    price: "$600",  
+    colour: "bg-yellow-400",  
+    category: ["beach-getaway", "exotic-trips"],  
+    tags: ["Budget", "New"],  
+    description: "Surf spots and golden beaches on Sri Lanka’s south coast.",  
+    nearestDestinations: ["Bentota", "Mirissa", "Galle"],  
+    galleryImages: [  
+      "https://source.unsplash.com/600x400?sri-lanka-beach",  
+      "https://source.unsplash.com/600x400?mirissa-waves",  
+      "https://source.unsplash.com/600x400?galle-fort"  
+    ],  
+    facilities: ["Hotel Stay", "Breakfast", "Surfing", "Guided Tour"],  
+    packageDetails: "Surf lessons, beach stays, cultural day trip.",  
+    averageRating: 4.6,  
+    region: "Out of India"  
+  },  
+  {  
+    id: 38,  
+    image: "https://source.unsplash.com/600x400?rajasthan-fort",  
+    placeName: "Rajasthan Cultural Trail",  
+    location: "Rajasthan, India",  
+    date: "2025-11-10 - 2025-11-17",  
+    startDate: "2025-11-10",  
+    endDate: "2025-11-17",  
+    price: "₹25,000",  
+    colour: "bg-orange-300",  
+    category: ["cultural-trails", "hidden-gems"],  
+    tags: ["Heritage", "Family"],  
+    description: "Forts and palaces of Jaipur, Jodhpur, and Udaipur.",  
+    nearestDestinations: ["Jaipur", "Jodhpur", "Udaipur"],  
+    galleryImages: [  
+      "https://source.unsplash.com/600x400?jaipur-fort",  
+      "https://source.unsplash.com/600x400?jodhpur-palace",  
+      "https://source.unsplash.com/600x400?udaipur-lake"  
+    ],  
+    facilities: ["Hotel Stay", "Breakfast", "Guided Tour"],  
+    packageDetails: "Palace visits, heritage walks, meals.",  
+    averageRating: 4.7,  
+    region: "India"  
+  },  
+  {  
+    id: 39,  
+    image: "https://source.unsplash.com/600x400?lake-tahoe-ski",  
+    placeName: "Lake Tahoe Ski & Stay",  
+    location: "USA",  
+    date: "2026-01-20 - 2026-01-25",  
+    startDate: "2026-01-20",  
+    endDate: "2026-01-25",  
+    price: "$1400",  
+    colour: "bg-blue-500",  
+    category: ["mountains", "adventure-trips", "exotic-trips"],  
+    tags: ["Ski", "Popular"],  
+    description: "Snow slopes and lake views at Lake Tahoe for skiing and chill time.",  
+    nearestDestinations: ["Heavenly Stat", "Squaw Valley", "Sand Harbor"],  
+    galleryImages: [  
+      "https://source.unsplash.com/600x400?lake-tahoe-ski",  
+      "https://source.unsplash.com/600x400?tahoe-lake",  
+      "https://source.unsplash.com/600x400?tahoe-slopes"  
+    ],  
+    facilities: ["Hotel Stay", "Breakfast", "Ski Pass", "Guided Tour"],  
+    packageDetails: "Ski day pass, gondola ride, lakeside stay, meals.",  
+    averageRating: 4.8,  
+    region: "Out of India"  
+  },  
+  {  
+    id: 40,  
+    image: "https://source.unsplash.com/600x400?nepal-monastery",  
+    placeName: "Nepal Monastery Trail",  
+    location: "Nepal",  
+    date: "2026-05-05 - 2026-05-09",  
+    startDate: "2026-05-05",  
+    endDate: "2026-05-09",  
+    price: "$700",  
+    colour: "bg-purple-400",  
+    category: ["cultural-trails", "hidden-gems"],  
+    tags: ["Spiritual", "New"],  
+    description: "Monasteries near Kathmandu—a peaceful Himalayan cultural experience.",  
+    nearestDestinations: ["Boudhanath", "Swayambhunath", "Patan"],  
+    galleryImages: [  
+      "https://source.unsplash.com/600x400?boudhanath-stupa",  
+      "https://source.unsplash.com/600x400?swayambhunath-monkeytemple",  
+      "https://source.unsplash.com/600x400?nepal-heritage"  
+    ],  
+    facilities: ["Hotel Stay", "Breakfast", "Guided Tour"],  
+    packageDetails: "Temple visits, heritage walk, meals.",  
+    averageRating: 4.6,  
+    region: "Out of India"  
+  }  
 ];
+
 
 
 export const filterBoxData = [
   {
     id: "category",
-    label: "Category",
-    multiple: true, // allow multiple selection
-    options: ["Romantic", "Family Trip", "Adventure", "Solo"],
-  },
-  {
-    id: "destinationType",
-    label: "Destination Type",
+    label: "Trip Type",
     multiple: true,
-    options: ["Beaches", "Mountains", "Cruise", "City"],
+    options: [
+      "Romantic",
+      "Family",
+      "Adventure",
+      "Solo",
+      "Group",
+      "Luxury",
+      "Budget",
+    ],
   },
   {
-    id: "sortBy",
-    label: "Sort By",
-    multiple: false, // single selection
-    options: ["Price", "Discount", "Rating"],
-  },
-  {
-    id: "tripDuration",
-    label: "Trip Duration",
+    id: "destination",
+    label: "Destination Style",
     multiple: true,
-    options: ["2 Days", "3 Days", "4 Days", "5+ Days"],
+    options: [
+      "Mountains",
+      "Beaches",
+      "Cities",
+      "Forests",
+      "Desert",
+      "Cruise",
+      "Snow",
+    ],
+  },
+  {
+    id: "location",
+    label: "Location",
+    multiple: true,
+    options: [
+      "India",
+      "International",
+    ],
+  },
+  {
+    id: "duration",
+    label: "Duration",
+    multiple: true,
+    options: [
+      "Weekend (2-3 Days)",
+      "Short (4-6 Days)",
+      "Week-long (7+ Days)",
+    ],
+  },
+  {
+    id: "tags",
+    label: "Special Tags",
+    multiple: true,
+    options: [
+      "Most Booked",
+      "Popular",
+      "New",
+      "Limited Offer",
+      "Early Bird",
+    ],
   },
 ];
+
 
 export const bookingAccordianData = [
   {
@@ -1196,3 +1239,81 @@ export const testimonials = [
       "A premium travel experience! Everything was top-notch, from the resorts to the private tours. Worth every penny!",
   },
 ];
+
+// Utils/constants.js
+
+export const blogData = [
+  {
+    id: 1,
+    title: "10 Breathtaking Waterfalls You Must Visit",
+    description: "Explore some of the most stunning waterfalls that will leave you in awe...",
+    content: "Here goes the full blog content with detailed descriptions, stories, and travel tips...",
+    slug: "breathtaking-waterfalls",
+    image1: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOWxalYFfzdvD0ZHHeHgSLbISo_vuZZNdbjlMaZzwTJtISisMnq6SJs-mFBatcrg-KABY&usqp=CAU",
+    image2: "https://media.istockphoto.com/id/831012130/photo/waterfall-in-krka-national-park.jpg?s=612x612&w=0&k=20&c=AY8E3i706Sbq39k2f4-6zJ1oyDy4mH_7Uvv0h6CdDC8=",
+    author: "Aarav Mehta",
+    date: "2025-08-01",
+    tag: "Most Read",
+  },
+  {
+    id: 2,
+    title: "How to Pack Light for a 2-Week Trip",
+    description: "Master minimalist packing for long trips with these smart travel hacks...",
+    content: "This is the full blog content covering packing techniques, examples, and tools...",
+    slug: "pack-light-travel-tips",
+    image1: "https://media.istockphoto.com/id/1311253634/photo/packing-suitcase-for-travel-vacation-in-new-normal-top-view.jpg?s=612x612&w=0&k=20&c=Cfh8R5fL8Qo467DesZuHOOOHroDZAsR6VfvTellV4p8=",
+    image2: "https://media.istockphoto.com/id/1311253634/photo/packing-suitcase-for-travel-vacation-in-new-normal-top-view.jpg?s=612x612&w=0&k=20&c=Cfh8R5fL8Qo467DesZuHOOOHroDZAsR6VfvTellV4p8=",
+    author: "Isha Kapoor",
+    date: "2025-07-20",
+    tag: "Most Read",
+  },
+  {
+    id: 3,
+    title: "Top 5 Hidden Gems in Southeast Asia",
+    description: "These lesser-known destinations are a must-add to your travel bucket list...",
+    content: "Explore off-the-beaten-path places in Thailand, Vietnam, and beyond...",
+    slug: "hidden-gems-asia",
+    image1: "https://img.freepik.com/free-photo/beautiful-girl-standing-boat-looking-mountains-ratchaprapha-dam-khao-sok-national-park-surat-thani-province-thailand_335224-849.jpg?semt=ais_hybrid&w=740&q=80",
+    image2: "https://img.freepik.com/free-photo/view-world-monument-celebrate-world-heritage-day_23-2151297145.jpg?semt=ais_hybrid&w=740&q=80",
+    author: "Ravi Verma",
+    date: "2025-07-05",
+    tag: "Most Read",
+  },
+  {
+    id: 4,
+    title: "Why You Should Visit The Himalayas in Winter",
+    description: "The Himalayas aren’t just for summer treks. Here’s why winter is magical...",
+    content: "Explore snow-covered peaks, quiet trails, and off-season beauty. Winter Himalayas offer an unmatched peaceful vibe, breathtaking scenery, and unique experiences...",
+    slug: "himalayas-in-winter",
+    image1: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOWxalYFfzdvD0ZHHeHgSLbISo_vuZZNdbjlMaZzwTJtISisMnq6SJs-mFBatcrg-KABY&usqp=CAU",
+    image2: "https://media.istockphoto.com/id/831012130/photo/waterfall-in-krka-national-park.jpg?s=612x612&w=0&k=20&c=AY8E3i706Sbq39k2f4-6zJ1oyDy4mH_7Uvv0h6CdDC8=",
+    author: "Neha Joshi",
+    date: "2025-08-10",
+    tag: "Popular",
+  },
+  {
+    id: 5,
+    title: "A Foodie's Guide to Street Food in India",
+    description: "Chaat, dosa, momos, and more — here’s what you can’t miss in Indian streets...",
+    content: "Indian street food is a journey in itself. From Delhi’s spicy chole bhature to Mumbai’s vada pav, we explore flavors, stalls, and safe eating tips for every traveler...",
+    slug: "indian-street-food-guide",
+    image1: "https://img.freepik.com/free-photo/beautiful-girl-standing-boat-looking-mountains-ratchaprapha-dam-khao-sok-national-park-surat-thani-province-thailand_335224-849.jpg?semt=ais_hybrid&w=740&q=80",
+    image2: "https://img.freepik.com/free-photo/view-world-monument-celebrate-world-heritage-day_23-2151297145.jpg?semt=ais_hybrid&w=740&q=80",
+    author: "Karan Singh",
+    date: "2025-08-03",
+    tag: "Cultural",
+  },
+  {
+    id: 6,
+    title: "Solo Travel: Tips for Your First Trip Alone",
+    description: "Solo traveling can be life-changing — if done right. Here’s how to start...",
+    content: "We discuss planning, safety, staying connected, and making the most of your solo adventure — from mindset to money and beyond...",
+    slug: "solo-travel-first-time",
+    image1: "https://media.istockphoto.com/id/1311253634/photo/packing-suitcase-for-travel-vacation-in-new-normal-top-view.jpg?s=612x612&w=0&k=20&c=Cfh8R5fL8Qo467DesZuHOOOHroDZAsR6VfvTellV4p8=",
+    image2: "https://media.istockphoto.com/id/1311253634/photo/packing-suitcase-for-travel-vacation-in-new-normal-top-view.jpg?s=612x612&w=0&k=20&c=Cfh8R5fL8Qo467DesZuHOOOHroDZAsR6VfvTellV4p8=",
+    author: "Simran Ahuja",
+    date: "2025-07-30",
+    tag: "Solo Travel",
+  },
+];
+
