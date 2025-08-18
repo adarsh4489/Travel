@@ -1,71 +1,78 @@
-
-import { useParams, Link } from 'react-router-dom';
-import { blogData } from '../Utils/constants';
+import React, { useEffect } from "react";
+import { useParams, Link } from "react-router-dom";
+import { blogData } from "../Utils/constants";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const BlogDetail = () => {
   const { slug } = useParams();
-  const index = blogData.findIndex((b) => b.slug === slug);
-  const blog = blogData[index];
-  if (!blog) return <p>Blog not found</p>;
 
-  const prevBlog = blogData[index - 1];
-  const nextBlog = blogData[index + 1];
+  useEffect(() => {
+    AOS.init({ duration: 800, easing: "ease-in-out", once: true });
+  }, []);
 
-  const categories = [
-    { title: 'Most Read', key: 'Most Read' },
-    { title: 'Featured', key: 'Popular' },
-    { title: 'New', key: 'New' },
-  ];
+  const blog = blogData.find((b) => b.slug === slug);
+
+  if (!blog) {
+    return (
+      <div className="min-h-screen flex items-center justify-center">
+        <p className="text-gray-600 text-lg">Blog not found.</p>
+      </div>
+    );
+  }
 
   return (
-    <div className="flex gap-8">
-      {/* Main Content */}
-      <article className="flex-1">
-        {/* Your existing content layout goes here */}
-      </article>
+    <main className="min-h-screen bg-gray-50 py-10 px-4 max-w-4xl mx-auto">
+      {/* Back link */}
+      <Link
+        to="/blogs"
+        className="inline-block mb-6 text-orange-500 hover:text-orange-600 font-semibold transform transition-transform duration-300 hover:scale-105"
+      >
+        ← Back to Blogs
+      </Link>
 
-      {/* Sidebar */}
-      <aside className="w-64 sticky top-20 space-y-6">
-        {categories.map((cat) => {
-          const posts = blogData.filter((b) => b.tag === cat.key);
-          return (
-            <div key={cat.key}>
-              <h4 className="font-semibold text-green-900">{cat.title}</h4>
-              <ul className="space-y-1 text-sm">
-                {posts.map((p) => (
-                  <li key={p.slug}>
-                    <Link
-                      to={`/blog/${p.slug}`}
-                      className={`block ${
-                        p.slug === slug ? 'text-orange-500 font-semibold' : 'text-gray-700'
-                      } hover:underline`}
-                    >
-                      {p.title}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          );
-        })}
-      </aside>
-
-      {/* Bottom Navigation */}
-      <div className="w-full max-w-5xl mx-auto mt-8 flex justify-between">
-        {prevBlog ? (
-          <Link to={`/blog/${prevBlog.slug}`} className="text-orange-500 hover:underline">
-            ← {prevBlog.title}
-          </Link>
-        ) : <span />}
-        {nextBlog && (
-          <Link to={`/blog/${nextBlog.slug}`} className="text-orange-500 hover:underline">
-            {nextBlog.title} →
-          </Link>
-        )}
+      {/* Title and meta */}
+      <div data-aos="fade-up">
+        <h1 className="text-4xl font-bold text-green-900 mb-2">{blog.title}</h1>
+        <div className="text-sm text-gray-500 mb-8">
+          <span>By {blog.author}</span> •{" "}
+          <span>{new Date(blog.date).toLocaleDateString()}</span>
+        </div>
       </div>
-    </div>
+
+      {/* First Image */}
+      <img
+        src={blog.image1}
+        alt={blog.title}
+        className="w-full rounded-lg mb-8 shadow-lg transition-transform duration-300 hover:scale-105 cursor-pointer"
+        data-aos="zoom-in"
+      />
+
+      {/* Blog content */}
+      <div className="prose max-w-none text-gray-700 mb-8" data-aos="fade-up">
+        {blog.description.split("\n").map((para, idx) => (
+          <p key={idx}>{para}</p>
+        ))}
+      </div>
+
+      {/* Second Image */}
+      <img
+        src={blog.image2}
+        alt={`${blog.title} - second`}
+        className="w-full rounded-lg mb-8 shadow-lg transition-transform duration-300 hover:scale-105 cursor-pointer"
+        data-aos="zoom-in"
+      />
+
+      {/* More content if exists */}
+      {blog.moreContent && (
+        <div className="prose max-w-none text-gray-700" data-aos="fade-up">
+          {blog.moreContent.split("\n").map((para, idx) => (
+            <p key={idx}>{para}</p>
+          ))}
+        </div>
+      )}
+    </main>
   );
 };
-
 
 export default BlogDetail;

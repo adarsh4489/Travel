@@ -1,121 +1,196 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { blogData } from "../Utils/constants";
 import { Link } from "react-router-dom";
-import FeaturedBlog from "../Components/FeaturedBlog"
+import AOS from "aos";
+import "aos/dist/aos.css";
+import BlogDetail from "./BlogDetail";
 
-// Sort Helpers
-const sortByLatest = (arr) => [...arr].sort((a, b) => new Date(b.date) - new Date(a.date));
-const sortByMostRead = (arr) => [...arr].sort((a, b) => (b.views || 0) - (a.views || 0));
-const sortByPopular = (arr) => [...arr].sort((a, b) => (b.popularity || 0) - (a.popularity || 0));
+// Filter Options
+const FILTERS = ["All", "Latest", "Popular", "Featured"];
 
-// Sidebar Filters
-const BlogFiltersSidebar = ({ selected, setSelected }) => {
-  const filters = ["Latest", "Most Read", "Popular"];
-  return (
-    <div className="sticky top-24 p-4 bg-white rounded-md shadow-md max-w-xs">
-      <h3 className="font-semibold text-green-900 mb-4 text-lg">Filter Blogs</h3>
-      <ul>
-        {filters.map((filter) => (
-          <li
-            key={filter}
-            onClick={() => setSelected(filter)}
-            className={`cursor-pointer mb-2 px-3 py-2 rounded-md text-sm transition ${
-              selected === filter
-                ? "bg-orange-500 text-white font-semibold"
-                : "text-gray-700 hover:bg-orange-100"
-            }`}
-          >
-            {filter}
-          </li>
-        ))}
-      </ul>
-    </div>
-  );
-};
-// All Blogs with Pagination
-const AllBlogsSection = ({ selectedFilter }) => {
+const Blogs = () => {
+  const [selectedFilter, setSelectedFilter] = useState("All");
+  const [searchInput, setSearchInput] = useState("");   // controlled input
+  const [searchTerm, setSearchTerm] = useState("");     // applied search term
   const [currentPage, setCurrentPage] = useState(1);
   const blogsPerPage = 6;
 
-  let filteredBlogs = [];
-  if (!blogData || !blogData.length) return <p className="text-center p-10">No blogs available.</p>;
+  useEffect(() => {
+    AOS.init({ duration: 800, once: true });
+  }, []);
 
-  if (selectedFilter === "Latest") filteredBlogs = sortByLatest(blogData);
-  else if (selectedFilter === "Most Read") filteredBlogs = sortByMostRead(blogData);
-  else if (selectedFilter === "Popular") filteredBlogs = sortByPopular(blogData);
-  else filteredBlogs = blogData;
+  // Filtering Logic
+  const getFilteredBlogs = () => {
+    let filtered = blogData;
 
-  const indexOfLastBlog = currentPage * blogsPerPage;
-  const indexOfFirstBlog = indexOfLastBlog - blogsPerPage;
-  const currentBlogs = filteredBlogs.slice(indexOfFirstBlog, indexOfLastBlog);
+    if (selectedFilter === "Latest") {
+      filtered = [...filtered].sort((a, b) => new Date(b.date) - new Date(a.date));
+    } else if (selectedFilter === "Popular") {
+      filtered = filtered.filter(blog => blog.tag === "popular");
+    } else if (selectedFilter === "Featured") {
+      filtered = filtered.filter(blog => blog.tag === "featured");
+    }
+
+    if (searchTerm.trim() !== "") {
+      filtered = filtered.filter((blog) =>
+        blog.title.toLowerCase().includes(searchTerm.toLowerCase())
+      );
+    }
+
+    return filtered;
+  };
+
+  const filteredBlogs = getFilteredBlogs();
+
+  // Pagination Logic
   const totalPages = Math.ceil(filteredBlogs.length / blogsPerPage);
-
-  return (
-    <section className="w-full">
-      <h2 className="text-2xl font-semibold text-green-900 mb-6">{selectedFilter} Blogs</h2>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-        {currentBlogs.map((blog) => (
-          <Link
-            to={`/blog/${blog.slug}`}
-            key={blog.id}
-            className="bg-white shadow rounded-md overflow-hidden hover:shadow-lg transition-shadow duration-300"
-          >
-            <img
-              src={blog.image1}
-              alt={blog.title}
-              className="w-full h-44 object-cover"
-            />
-            <div className="p-4">
-              <h3 className="font-semibold text-green-800">{blog.title}</h3>
-              <p className="text-sm text-gray-600 mt-1">
-                {blog.description.length > 120
-                  ? `${blog.description.slice(0, 120)}...`
-                  : blog.description}
-              </p>
-              <div className="mt-2 text-xs text-gray-500 flex justify-between">
-                <span>By {blog.author}</span>
-                <span>{new Date(blog.date).toLocaleDateString()}</span>
-              </div>
-            </div>
-          </Link>
-        ))}
-      </div>
-
-      {/* Pagination */}
-      <div className="flex justify-center mt-10 gap-2">
-        {Array.from({ length: totalPages }, (_, i) => (
-          <button
-            key={i}
-            onClick={() => setCurrentPage(i + 1)}
-            className={`px-4 py-2 rounded-full text-sm font-medium transition ${
-              currentPage === i + 1
-                ? "bg-orange-500 text-white"
-                : "bg-gray-200 text-gray-700 hover:bg-gray-300"
-            }`}
-          >
-            {i + 1}
-          </button>
-        ))}
-      </div>
-    </section>
+  const paginatedBlogs = filteredBlogs.slice(
+    (currentPage - 1) * blogsPerPage,
+    currentPage * blogsPerPage
   );
-};
 
-// Final Page Component
-const Blogs = () => {
-  const [selectedFilter, setSelectedFilter] = useState("Latest");
+  // When filter or search term changes, reset page to 1
+  useEffect(() => {
+    setCurrentPage(1);
+  }, [selectedFilter, searchTerm]);
+
+  const handleFilterClick = (filter) => {
+    setSelectedFilter(filter);
+  };
+
+  const handleSearchInputChange = (e) => {
+    setSearchInput(e.target.value);
+  };
+
+  const handleSearchSubmit = (e) => {
+    e.preventDefault();
+    setSearchTerm(searchInput);
+  };
 
   return (
     <main className="min-h-screen bg-gray-50 py-10">
-      <FeaturedBlog />
-      <div className="w-[90%] max-w-7xl mx-auto flex flex-col lg:flex-row gap-10">
-        <div className="lg:w-64">
-          <BlogFiltersSidebar selected={selectedFilter} setSelected={setSelectedFilter} />
+      <div className="w-[90%] max-w-7xl mx-auto">
+        {/* Intro Section */}
+        <div className="text-center mb-10" data-aos="fade-down">
+          <h1 className="text-4xl font-bold text-gray-800 mb-2">Explore Our Blog</h1>
+          <p className="text-gray-600 max-w-2xl mx-auto">
+            Tips, guides, and travel stories curated to inspire your next adventure.
+          </p>
         </div>
-        <div className="flex-1">
-          <AllBlogsSection selectedFilter={selectedFilter} />
+
+        {/* Filter + Search */}
+        <div className="flex flex-col lg:flex-row justify-between items-center mb-8 gap-4" data-aos="fade-up">
+          {/* Filters */}
+          <div className="flex flex-wrap gap-3 justify-center lg:justify-start">
+            {FILTERS.map((filter) => (
+              <button
+                key={filter}
+                onClick={() => handleFilterClick(filter)}
+                className={`px-4 py-2 rounded-full text-sm font-medium transition ${
+                  selectedFilter === filter
+                    ? "bg-orange-500 text-white"
+                    : "bg-gray-200 text-gray-700 hover:bg-gray-300"
+                }`}
+              >
+                {filter}
+              </button>
+            ))}
+          </div>
+
+          {/* Search */}
+          <form onSubmit={handleSearchSubmit} className="flex w-full max-w-sm">
+            <input
+              type="text"
+              placeholder="Search blog..."
+              value={searchInput}
+              onChange={handleSearchInputChange}
+              className="px-4 py-2 border border-gray-300 rounded-l-full outline-none focus:ring-2 focus:ring-orange-400 flex-grow"
+            />
+            <button
+              type="submit"
+              className="bg-orange-500 px-4 py-2 text-lg rounded-r-full text-white hover:bg-orange-600 transition"
+            >
+              🔍
+            </button>
+          </form>
         </div>
+
+        {/* Blog Grid */}
+        {paginatedBlogs.length > 0 ? (
+          <div
+            className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8"
+            data-aos="fade-up"
+          >
+            {paginatedBlogs.map((blog, index) => (
+              <Link
+                to={`/blog/${blog.id}`}
+                key={blog.id}
+                className="bg-white shadow rounded-md overflow-hidden hover:shadow-lg hover:scale-[1.02] transition-all duration-300"
+                data-aos="zoom-in-up"
+                data-aos-delay={index * 100}
+              >
+                <img src={blog.image1} alt={blog.title} className="w-full h-44 object-cover" />
+                <div className="p-4">
+                  <h3 className="font-semibold text-green-800">{blog.title}</h3>
+                  <p className="text-sm text-gray-600 mt-1">
+                    {blog.description.length > 120
+                      ? blog.description.slice(0, 120) + "..."
+                      : blog.description}
+                  </p>
+                  <div className="mt-2 text-xs text-gray-500 flex justify-between">
+                    <span>By {blog.author}</span>
+                    <span>{new Date(blog.date).toLocaleDateString()}</span>
+                  </div>
+                </div>
+              </Link>
+            ))}
+          </div>
+        ) : (
+          <p className="text-center text-gray-500 mt-20">No blogs found.</p>
+        )}
+
+        {/* Pagination */}
+        {totalPages > 1 && (
+          <div className="flex flex-col items-center mt-10 gap-4">
+            <div className="flex gap-2 flex-wrap justify-center">
+              <button
+                onClick={() => setCurrentPage((prev) => Math.max(prev - 1, 1))}
+                disabled={currentPage === 1}
+                className="px-4 py-2 bg-orange-100 text-orange-700 font-medium rounded-full disabled:opacity-50 transition"
+              >
+                Previous
+              </button>
+
+              {Array.from({ length: totalPages }, (_, i) => (
+                <button
+                  key={i}
+                  onClick={() => setCurrentPage(i + 1)}
+                  className={`px-4 py-2 rounded-full text-sm font-medium transition ${
+                    currentPage === i + 1
+                      ? "bg-orange-500 text-white"
+                      : "bg-gray-200 text-gray-700 hover:bg-gray-300"
+                  }`}
+                >
+                  {i + 1}
+                </button>
+              ))}
+
+              <button
+                onClick={() => setCurrentPage((prev) => Math.min(prev + 1, totalPages))}
+                disabled={currentPage === totalPages}
+                className="px-4 py-2 bg-orange-100 text-orange-700 font-medium rounded-full disabled:opacity-50 transition"
+              >
+                Next
+              </button>
+            </div>
+
+            <p className="text-xs text-gray-500">
+              Page {currentPage} of {totalPages}
+            </p>
+          </div>
+        )}
       </div>
+      <BlogDetail/>
     </main>
   );
 };

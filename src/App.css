@@ -1,7 +1,7 @@
 
-
 .bg-travel{
     background-image: url("./assets/travel.jpg");
     background-size: cover;
     background-position: center;
+    opacity: 40;
 }

@@ -1,4 +1,6 @@
-// HowItWorks.jsx
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import { FaMapMarkedAlt, FaSuitcaseRolling, FaPlaneDeparture, FaSmile } from "react-icons/fa";
 
 const steps = [
@@ -25,22 +27,39 @@ const steps = [
 ];
 
 const HowItWorks = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 800,
+      easing: "ease-in-out",
+      once: true,
+    });
+  }, []);
+
   return (
-    <section className="py-12 px-4 bg-gray-50">
-      <div className="max-w-6xl mx-auto text-center">
-        <h2 className="text-3xl font-bold mb-8 text-gray-800">How It Works</h2>
+    <section className="py-24 bg-gray-50">
+      <div className="w-[80%] mx-auto text-center">
+        <h2
+          className="text-3xl font-bold text-gray-800 mb-12"
+          data-aos="fade-down"
+        >
+          How It Works
+        </h2>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
           {steps.map((step, index) => (
             <div
               key={index}
-              className="bg-white p-6 rounded-lg shadow hover:shadow-md transition"
+              className="bg-white p-6 rounded-xl shadow-md cursor-pointer
+                         hover:shadow-xl hover:scale-[1.05]
+                         transition-transform duration-300 ease-in-out"
+              data-aos="fade-up"
+              data-aos-delay={index * 150}
             >
-              <div className="mb-4 flex justify-center">{step.icon}</div>
-              <h3 className="text-lg font-semibold text-gray-700 mb-2">
+              <div className="mb-6 flex justify-center">{step.icon}</div>
+              <h3 className="text-lg font-semibold text-gray-800 mb-3">
                 {step.title}
               </h3>
-              <p className="text-sm text-gray-500">{step.desc}</p>
+              <p className="text-sm text-gray-600">{step.desc}</p>
             </div>
           ))}
         </div>

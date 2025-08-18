@@ -30,8 +30,8 @@ const About = () => {
       <WhatWeDo/>
       <AditionalServices/>
       <OurImpactSection/>
-      <Cta/>
       <TestimonialCarousel/>
+      <Cta/>
     </div>
   );
 };

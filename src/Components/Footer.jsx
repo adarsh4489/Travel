@@ -24,11 +24,16 @@ const Footer = () => {
             Quick Links
           </h3>
           <ul className="space-y-1 text-sm">
-            <li>Home</li>
-            <li>About</li>
-            <li>Offers</li>
-            <li>Destinations</li>
-            <li>Contact</li>
+            {["Home", "About", "Offers", "Destinations", "Contact"].map(
+              (item, index) => (
+                <li
+                  key={index}
+                  className="cursor-pointer transition-all duration-300 hover:text-orange-500 hover:translate-x-2"
+                >
+                  {item}
+                </li>
+              )
+            )}
           </ul>
         </div>
 
@@ -38,12 +43,21 @@ const Footer = () => {
             Popular Categories
           </h3>
           <ul className="space-y-1 text-sm">
-            <li>Beach Gateway</li>
-            <li>Adventure Trips</li>
-            <li>Exotic Trips</li>
-            <li>Hidden Gems</li>
-            <li>Cultural Trails</li>
-            <li>Mountain Escapes</li>
+            {[
+              "Beach Gateway",
+              "Adventure Trips",
+              "Exotic Trips",
+              "Hidden Gems",
+              "Cultural Trails",
+              "Mountain Escapes",
+            ].map((item, index) => (
+              <li
+                key={index}
+                className="cursor-pointer transition-all duration-300 hover:text-orange-500 hover:translate-x-2"
+              >
+                {item}
+              </li>
+            ))}
           </ul>
         </div>
 
@@ -58,11 +72,11 @@ const Footer = () => {
           </p>
           <div className="flex">
             <input
-              type="text"
+              type="email"
               placeholder="Enter your email"
-              className="w-full px-3 py-2 rounded-l-full bg-white text-green-950 outline-none text-sm"
+              className="w-full px-3 py-2 rounded-l-full bg-white text-green-950 outline-none text-sm focus:ring-2 focus:ring-orange-500 transition"
             />
-            <button className="bg-orange-500 hover:bg-orange-600 px-4 py-2 rounded-r-full text-white text-sm font-semibold">
+            <button className="bg-orange-500 hover:bg-orange-600 px-4 py-2 rounded-r-full text-white text-sm font-semibold transition-transform duration-300 hover:scale-105">
               Subscribe
             </button>
           </div>
@@ -74,14 +88,16 @@ const Footer = () => {
 
       {/* Bottom Info */}
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center text-xs text-gray-400 gap-2 px-2">
-        <p>
-          &copy; {new Date().getFullYear()} WanderWise. All rights reserved.
-        </p>
+        <p>&copy; {new Date().getFullYear()} WanderWise. All rights reserved.</p>
         <div className="flex gap-4 text-lg">
-          <FaFacebookF className="hover:text-white cursor-pointer" />
-          <FaInstagram className="hover:text-white cursor-pointer" />
-          <FaTwitter className="hover:text-white cursor-pointer" />
-          <FaLinkedinIn className="hover:text-white cursor-pointer" />
+          {[FaFacebookF, FaInstagram, FaTwitter, FaLinkedinIn].map(
+            (Icon, index) => (
+              <Icon
+                key={index}
+                className="hover:text-white cursor-pointer transition-transform duration-300 hover:scale-110"
+              />
+            )
+          )}
         </div>
         <p className="italic">
           Built by Adarsh Kumar Mishra – for learning purposes only.

@@ -8,7 +8,7 @@ import FeaturedBlog from "../Components/FeaturedBlog"
 
 const Home = () => {
   return (
-    <div className="mx-auto my-4 flex flex-col gap-16">
+    <div className="mx-auto  flex flex-col gap-16">
       <HeroSection />
       <Services />
       <HowItWorks/>

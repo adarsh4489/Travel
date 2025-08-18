@@ -1,15 +1,44 @@
-import { FaMapMarkedAlt,FaUserTie,FaLaptop    } from "react-icons/fa";
+import { FaMapMarkedAlt, FaUserTie, FaLaptop } from "react-icons/fa";
 import ServiceCard from "./ServiceCard";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from "react";
 
 const Services = () => {
-  return (
-    <div className="w-[80%] mx-auto my-12">
-      <h1 className="text-2xl font-bold my-8 text-center ">Why To Choose Us?</h1>
+  useEffect(() => {
+    AOS.init({
+      duration: 800,
+      once: true,
+      easing: 'ease-in-out',
+    });
+  }, []);
 
-      <div className="flex justify-center gap-8">
-        <ServiceCard icon={FaMapMarkedAlt } title={"Top Travel Spots"} description={"Explore top-rated places across India & beyond."}/>
-       <ServiceCard icon={FaUserTie } title={"Local Travel Experts"} description={"Every trip comes with knowledgeable, friendly guides."} />
-       <ServiceCard icon={FaLaptop } title={"Easy Booking"} description={"Fast and simple trip planning in just a few clicks."}/>
+  return (
+    <div className="w-[80%] mx-auto ">
+      <h1 className="text-3xl font-bold text-gray-800 mb-8 text-center" data-aos="fade-up">Why To Choose Us?</h1>
+
+      <div className="flex justify-center gap-8 ">
+        <div data-aos="zoom-in"  data-aos-delay="150">
+          <ServiceCard
+            icon={FaMapMarkedAlt}
+            title={"Top Travel Spots"}
+            description={"Explore top-rated places across India & beyond."}
+          />
+        </div>
+        <div data-aos="zoom-in" data-aos-delay="300">
+          <ServiceCard
+            icon={FaUserTie}
+            title={"Local Travel Experts"}
+            description={"Every trip comes with knowledgeable, friendly guides."}
+          />
+        </div>
+        <div data-aos="zoom-in" data-aos-delay="400">
+          <ServiceCard
+            icon={FaLaptop}
+            title={"Easy Booking"}
+            description={"Fast and simple trip planning in just a few clicks."}
+          />
+        </div>
       </div>
     </div>
   );

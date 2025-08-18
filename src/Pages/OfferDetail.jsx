@@ -1,96 +1,153 @@
 import TestimonialCarousel from "../Components/TestimonialCarousel";
-import {useNavigate, useParams } from "react-router";
+import { useNavigate, useParams } from "react-router";
 import { FaStar } from "react-icons/fa6";
 import { tripData } from "../Utils/constants";
+import { useEffect, useState } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const OfferDetail = () => {
   const { id } = useParams();
   const data = tripData.find((item) => String(item.id) === id);
+  const navigate = useNavigate();
+
+  const [mainImage, setMainImage] = useState(null);
+  const [thumbnails, setThumbnails] = useState([]);
+
+  useEffect(() => {
+    AOS.init({ duration: 800, easing: "ease-in-out", once: true });
+    window.scrollTo(0, 0);
+    if (data) {
+      setMainImage(data.image);
+      setThumbnails(data.galleryImages.slice(0, 3));
+    }
+  }, [data]);
+
+  if (!data) return <p className="text-center mt-20 text-gray-600">Offer not found.</p>;
+
   const {
     placeName,
     description,
     facilities,
     location,
-    image,
-    galleryImages,
     averageRating,
     price,
     packageDetails,
-    nearestDestinations,endDate,startDate
+    nearestDestinations,
+    endDate,
+    startDate,
   } = data;
-  const navigate=useNavigate();
+
+  // ✅ Swap Logic
+  const handleImageSwap = (clickedImg, index) => {
+    const newThumbs = [...thumbnails];
+    const temp = mainImage;
+    setMainImage(clickedImg);
+    newThumbs[index] = temp;
+    setThumbnails(newThumbs);
+  };
 
   return (
-    <div className="w-[90%] my-20 mx-12 ">
-      <div className="flex ">
-        <div className="flex flex-col w-1/2 gap-1">
-          <img src={image} alt="" className="rounded-lg" />
-          <div className="flex justify-between gap-2 w-full">
-            {galleryImages.map((item, index) => (
+    <div className="w-[90%] max-w-7xl mx-auto my-20">
+      {/* Top Section */}
+      <div className="flex flex-col lg:flex-row gap-8" data-aos="fade-up">
+        {/* Left: Images */}
+        <div className="flex flex-col lg:w-1/2 gap-4">
+          {/* Main Image */}
+          <img
+            src={mainImage}
+            alt="Main"
+            className="rounded-xl object-cover h-72 w-full shadow-md transition duration-300 ease-in-out"
+            data-aos="zoom-in"
+          />
+
+          {/* Gallery Thumbnails */}
+          <div className="flex justify-between gap-2">
+            {thumbnails.map((item, index) => (
               <img
                 key={index}
-                className="w-[24%] rounded-xl object-cover"
                 src={item}
+                onClick={() => handleImageSwap(item, index)}
+                className={`w-1/3 h-24 object-cover rounded-lg cursor-pointer transition-all duration-300 hover:scale-105 shadow-sm`}
                 alt={`Gallery ${index}`}
+                data-aos="zoom-in"
+                data-aos-delay={index * 100}
               />
             ))}
           </div>
         </div>
-        <div className="details flex flex-col w-1/2 gap-2 ml-24">
-          <h2 className="text-2xl font-semibold">{placeName}</h2>
+
+        {/* Right: Details */}
+        <div className="lg:w-1/2 flex flex-col gap-4" data-aos="fade-left">
+          <h2 className="text-3xl font-bold text-green-900">{placeName}</h2>
           <div className="flex gap-4 items-center">
             <p className="text-lg font-semibold">{location}</p>
             <div className="font-bold text-green-900 flex items-center gap-1">
-              {averageRating}{" "}
+              {averageRating}
               <span className="text-yellow-400">
-                {" "}
                 <FaStar />
-              </span>{" "}
+              </span>
             </div>
           </div>
-          <p className="font-light">{description}</p>
+          <p className="text-gray-700 leading-relaxed">{description}</p>
+
+          {/* Nearest Destinations */}
+          <div className="flex flex-wrap gap-2 items-center">
+            <strong className="text-gray-800">Nearest Destinations:</strong>
+            {nearestDestinations.map((item, index) => (
+              <span
+                key={index}
+                className="bg-green-900/70 text-white px-3 py-1 rounded-full text-sm"
+              >
+                {item}
+              </span>
+            ))}
+          </div>
+
+          {/* Facilities */}
           <div className="flex flex-wrap gap-2">
-            <strong>Nearest Destinations:</strong>{" "}
-            {nearestDestinations.map((item, index) => {
-              return (
-                <span
-                  className="bg-green-950/60 text-white px-2 py-1 rounded-xl "
-                  key={index}
-                >
-                  {item}
-                </span>
-              );
-            })}
+            {facilities.map((item, index) => (
+              <span
+                key={index}
+                className="text-sm bg-slate-200 px-3 py-1 rounded-full text-gray-700"
+              >
+                {item}
+              </span>
+            ))}
           </div>
-          <div className="flex gap-2 flex-wrap">
-            {facilities.map((item, index) => {
-              return (
-                <span
-                  className="text-sm bg-slate-200 px-2 py-1 rounded-xl"
-                  key={index}
-                >
-                  {item}
-                </span>
-              );
-            })}
-          </div>
-          <p className="text-gray-600">{packageDetails}</p>
-          <div>
-            <p className="font-bold text-green-900">
-              ${price}/- <strike className="text-red-600 ml-2">$1800/-</strike>
+
+          <p className="text-gray-700">{packageDetails}</p>
+
+          {/* Pricing */}
+          <div className="mt-4 space-y-2">
+            <p className="text-xl font-bold text-green-900">
+              ${price}
+              <strike className="text-red-500 ml-3 text-sm font-normal">$1800</strike>
             </p>
-            <p className="text-lg font-semibold">Starts From {startDate} To {endDate}</p>
-            <button className="bg-orange-500 hover:bg-orange-600 px-2 rounded-lg my-4 py-2 font-semibold text-white" onClick={()=>{navigate("/booking",{state:data})}}>
+            <p className="text-md font-semibold text-gray-800">
+              Starts from {startDate} to {endDate}
+            </p>
+
+            <button
+              className="bg-orange-500 hover:bg-orange-600 px-5 py-2 mt-3 rounded-full text-white font-semibold transition duration-300 shadow-md hover:shadow-lg"
+              onClick={() => navigate("/booking", { state: data })}
+            >
               Book Now
             </button>
           </div>
         </div>
       </div>
-      <div className="mt-12">
-        <h2 className="text-3xl font-bold">Similar Packages</h2>
-        here more related cards
+
+      {/* Similar Packages */}
+      <div className="mt-20" data-aos="fade-up">
+        <h2 className="text-3xl font-bold mb-4 text-green-900">Similar Packages</h2>
+        <p className="text-gray-600 italic mb-6">More related trips will go here.</p>
       </div>
-      <TestimonialCarousel />
+
+      {/* Testimonials */}
+      <div className="mt-20" data-aos="fade-up">
+        <TestimonialCarousel />
+      </div>
     </div>
   );
 };

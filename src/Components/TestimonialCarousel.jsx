@@ -1,26 +1,23 @@
-// Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
-
-// Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/autoplay";
+import "swiper/css/navigation";
 
-// Import required modules
-import { Pagination, Autoplay,Navigation } from "swiper/modules";
+import { Pagination, Autoplay, Navigation } from "swiper/modules";
 
 import { testimonials } from "../Utils/constants";
 import TestimonialCard from "./TestimonialCard";
 
 const TestimonialCarousel = () => {
   return (
-    <div className="w-[80%] mx-auto py-12">
-      <h2 className="text-3xl font-semibold text-green-900 underline text-center">
+    <div className="w-[80%] mx-auto py-24  ">
+      <h2 className="text-3xl font-bold text-gray-800 mb-8 text-center">
         What Our Travelers Say
       </h2>
-      <div className="my-8">
+      <div className="">
         <Swiper
-          modules={[Pagination, Autoplay]}
+          modules={[Pagination, Autoplay, Navigation]}
           spaceBetween={30}
           slidesPerView={3}
           loop={true}
@@ -33,18 +30,26 @@ const TestimonialCarousel = () => {
           breakpoints={{
             640: {
               slidesPerView: 1,
+              spaceBetween: 20,
             },
             1024: {
               slidesPerView: 2,
+              spaceBetween: 25,
             },
             1280: {
               slidesPerView: 3,
+              spaceBetween: 30,
             },
           }}
         >
           {testimonials.map((item) => (
-            <SwiperSlide key={item.id}>
-              <TestimonialCard item={item} />
+            <SwiperSlide
+              key={item.id}
+              className="overflow-visible  py-8" // Allow cards to pop out on hover if needed
+            >
+              <div className="transition-transform duration-300 hover:scale-[1.05] hover:shadow-lg">
+                <TestimonialCard item={item} />
+              </div>
             </SwiperSlide>
           ))}
         </Swiper>
