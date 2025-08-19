@@ -76,7 +76,7 @@ const TripCard = ({ data }) => {
           </div>
 
           <p className="text-base mt-1 font-semibold">{date}</p>
-          <p className="text-xl font-bold mt-2 text-green-950">${price}</p>
+          <p className="text-xl font-bold mt-2 text-green-950">{price}</p>
         </div>
 
         <div className="flex gap-4 mt-6 md:mt-4">

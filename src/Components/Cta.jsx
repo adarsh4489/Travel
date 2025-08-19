@@ -2,8 +2,10 @@ import React, { useEffect } from 'react';
 import icy from "../assets/icy.jpg";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import { useNavigate } from 'react-router';
 
 const Cta = () => {
+  const navigate=useNavigate();
   useEffect(() => {
     AOS.init({
       duration: 800,
@@ -37,7 +39,7 @@ const Cta = () => {
           className='rounded-full bg-orange-500 text-white hover:bg-amber-600 px-4 py-2 font-semibold w-fit'
           data-aos="zoom-in"
           data-aos-delay="400"
-        >
+          onClick={()=>navigate("/deals")}>
           Discover Now
         </button>
       </div>

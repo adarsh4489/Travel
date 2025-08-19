@@ -1253,7 +1253,7 @@ export const blogData = [
     image2: "https://media.istockphoto.com/id/831012130/photo/waterfall-in-krka-national-park.jpg?s=612x612&w=0&k=20&c=AY8E3i706Sbq39k2f4-6zJ1oyDy4mH_7Uvv0h6CdDC8=",
     author: "Aarav Mehta",
     date: "2025-08-01",
-    tag: "Most Read",
+    tag: "featured",
   },
   {
     id: 2,
@@ -1265,7 +1265,7 @@ export const blogData = [
     image2: "https://media.istockphoto.com/id/1311253634/photo/packing-suitcase-for-travel-vacation-in-new-normal-top-view.jpg?s=612x612&w=0&k=20&c=Cfh8R5fL8Qo467DesZuHOOOHroDZAsR6VfvTellV4p8=",
     author: "Isha Kapoor",
     date: "2025-07-20",
-    tag: "Most Read",
+    tag: "latest",
   },
   {
     id: 3,
@@ -1277,7 +1277,7 @@ export const blogData = [
     image2: "https://img.freepik.com/free-photo/view-world-monument-celebrate-world-heritage-day_23-2151297145.jpg?semt=ais_hybrid&w=740&q=80",
     author: "Ravi Verma",
     date: "2025-07-05",
-    tag: "Most Read",
+    tag: "popular",
   },
   {
     id: 4,
@@ -1289,7 +1289,7 @@ export const blogData = [
     image2: "https://media.istockphoto.com/id/831012130/photo/waterfall-in-krka-national-park.jpg?s=612x612&w=0&k=20&c=AY8E3i706Sbq39k2f4-6zJ1oyDy4mH_7Uvv0h6CdDC8=",
     author: "Neha Joshi",
     date: "2025-08-10",
-    tag: "Popular",
+    tag: "popular",
   },
   {
     id: 5,
@@ -1301,7 +1301,7 @@ export const blogData = [
     image2: "https://img.freepik.com/free-photo/view-world-monument-celebrate-world-heritage-day_23-2151297145.jpg?semt=ais_hybrid&w=740&q=80",
     author: "Karan Singh",
     date: "2025-08-03",
-    tag: "Cultural",
+    tag: "featured",
   },
   {
     id: 6,
@@ -1313,7 +1313,32 @@ export const blogData = [
     image2: "https://media.istockphoto.com/id/1311253634/photo/packing-suitcase-for-travel-vacation-in-new-normal-top-view.jpg?s=612x612&w=0&k=20&c=Cfh8R5fL8Qo467DesZuHOOOHroDZAsR6VfvTellV4p8=",
     author: "Simran Ahuja",
     date: "2025-07-30",
-    tag: "Solo Travel",
+    tag: "latest",
+  },
+  {
+    id: 7,
+    title: "Best Beaches to Visit in Goa",
+    description: "Sun, sand, and serenity — discover Goa’s most beautiful beaches...",
+    content: "From Baga to Palolem, here’s your ultimate guide to enjoying Goa...",
+    slug: "best-beaches-goa",
+    image1: "https://img.freepik.com/free-photo/beach-sea_74190-6502.jpg?w=740&q=80",
+    image2: "https://img.freepik.com/free-photo/tropical-beach-sea_74190-1252.jpg?w=740&q=80",
+    author: "Priya Nair",
+    date: "2025-08-05",
+    tag: "popular",
+  },
+  {
+    id: 8,
+    title: "Ultimate Europe Backpacking Guide",
+    description: "Backpack through Europe with this step-by-step guide for first-timers...",
+    content: "Covers routes, budget tips, and must-visit cities for backpackers...",
+    slug: "europe-backpacking-guide",
+    image1: "https://img.freepik.com/free-photo/young-tourists-city_23-2148155265.jpg?w=740&q=80",
+    image2: "https://img.freepik.com/free-photo/backpacker-mountain_23-2147645635.jpg?w=740&q=80",
+    author: "Arjun Sharma",
+    date: "2025-08-15",
+    tag: "featured",
   },
 ];
+
 

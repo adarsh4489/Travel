@@ -3,6 +3,7 @@ import { useNavigate, useParams } from "react-router";
 import { FaStar } from "react-icons/fa6";
 import { tripData } from "../Utils/constants";
 import { useEffect, useState } from "react";
+import PopularDestinations from "../Components/PopularDestinations";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -104,7 +105,6 @@ const OfferDetail = () => {
             ))}
           </div>
 
-          {/* Facilities */}
           <div className="flex flex-wrap gap-2">
             {facilities.map((item, index) => (
               <span
@@ -118,11 +118,11 @@ const OfferDetail = () => {
 
           <p className="text-gray-700">{packageDetails}</p>
 
-          {/* Pricing */}
+
           <div className="mt-4 space-y-2">
             <p className="text-xl font-bold text-green-900">
-              ${price}
-              <strike className="text-red-500 ml-3 text-sm font-normal">$1800</strike>
+              {price}
+              <strike className="text-red-500 ml-3 text-sm font-normal">Rs 1800</strike>
             </p>
             <p className="text-md font-semibold text-gray-800">
               Starts from {startDate} to {endDate}
@@ -130,7 +130,10 @@ const OfferDetail = () => {
 
             <button
               className="bg-orange-500 hover:bg-orange-600 px-5 py-2 mt-3 rounded-full text-white font-semibold transition duration-300 shadow-md hover:shadow-lg"
-              onClick={() => navigate("/booking", { state: data })}
+             onClick={(e) => {
+              e.stopPropagation();
+              navigate("/booking", { state: { data } });
+            }}
             >
               Book Now
             </button>
@@ -139,13 +142,13 @@ const OfferDetail = () => {
       </div>
 
       {/* Similar Packages */}
-      <div className="mt-20" data-aos="fade-up">
+      <div className="mt-24 " data-aos="fade-up">
         <h2 className="text-3xl font-bold mb-4 text-green-900">Similar Packages</h2>
-        <p className="text-gray-600 italic mb-6">More related trips will go here.</p>
+        <PopularDestinations/>
       </div>
 
       {/* Testimonials */}
-      <div className="mt-20" data-aos="fade-up">
+      <div className="" data-aos="fade-up">
         <TestimonialCarousel />
       </div>
     </div>

@@ -1,8 +1,10 @@
 import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { useNavigate } from "react-router";
 
 const HeroSection = () => {
+  const navigate=useNavigate();
   useEffect(() => {
     AOS.init({
       duration: 1000,
@@ -37,7 +39,7 @@ const HeroSection = () => {
           <button
             className="mt-4 bg-orange-600 hover:bg-orange-500 transition-all duration-300 
                        cursor-pointer rounded-full w-[60%] text-white px-4 py-2 font-semibold shadow-lg"
-          >
+           onClick={()=>navigate("/deals")}>
             Explore
           </button>
         </div>

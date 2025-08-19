@@ -58,13 +58,13 @@ const Deals = () => {
             ))}
           </div>
 
-          <button
+          {/* <button
             className="mt-8 px-6 py-3 bg-orange-500 hover:bg-orange-600 block mx-auto rounded-full text-white font-semibold transition-transform transform hover:scale-105 shadow-lg"
             data-aos="zoom-in"
             data-aos-delay="400"
           >
             Load More
-          </button>
+          </button> */}
         </div>
       </div>
     </div>
