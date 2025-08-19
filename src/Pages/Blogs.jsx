@@ -130,7 +130,7 @@ const Blogs = () => {
             >
               {paginatedBlogs.map((blog, index) => (
                 <Link
-                  to={`/blogs/${blog.id}`}
+                  to={`/blogs/${blog.title}`}
                   key={blog.id}
                   className="bg-white shadow rounded-md overflow-hidden hover:shadow-lg hover:scale-[1.02] transition-all duration-300"
                   data-aos="zoom-in-up"

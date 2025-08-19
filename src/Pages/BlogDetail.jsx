@@ -11,7 +11,8 @@ const BlogDetail = () => {
     AOS.init({ duration: 800, easing: "ease-in-out", once: true });
   }, []);
 
-  const blog = blogData.find((b) => b.slug === slug);
+  // Agar slug ko title ke jagah slug ke basis pe match karna chahte ho to blog.slug use karo
+  const blog = blogData.find((b) => b.title === slug);
 
   if (!blog) {
     return (
@@ -22,55 +23,77 @@ const BlogDetail = () => {
   }
 
   return (
-    <main className="min-h-screen bg-gray-50 py-10 px-4 max-w-4xl mx-auto">
-      {/* Back link */}
-      <Link
-        to="/blogs"
-        className="inline-block mb-6 text-orange-500 hover:text-orange-600 font-semibold transform transition-transform duration-300 hover:scale-105"
-      >
-        ← Back to Blogs
-      </Link>
-
-      {/* Title and meta */}
-      <div data-aos="fade-up">
-        <h1 className="text-4xl font-bold text-green-900 mb-2">{blog.title}</h1>
-        <div className="text-sm text-gray-500 mb-8">
-          <span>By {blog.author}</span> •{" "}
-          <span>{new Date(blog.date).toLocaleDateString()}</span>
+    <main className="min-h-screen bg-gray-50 pb-16">
+      {/* Hero Image */}
+      <div className="relative w-full h-[350px] sm:h-[450px] lg:h-[500px] overflow-hidden">
+        <img
+          src={blog.image2}
+          alt={blog.title}
+          className="w-full h-full object-cover transform hover:scale-105 transition duration-500"
+        />
+        <div className="absolute inset-0 bg-black/40 flex items-end">
+          <div className="p-6 sm:p-10 text-white">
+            <h1 className="text-3xl sm:text-4xl font-bold mb-2">{blog.title}</h1>
+            <p className="text-sm text-gray-200">
+              By {blog.author} • {new Date(blog.date).toLocaleDateString()}
+            </p>
+          </div>
         </div>
       </div>
 
-      {/* First Image */}
-      <img
-        src={blog.image1}
-        alt={blog.title}
-        className="w-full rounded-lg mb-8 shadow-lg transition-transform duration-300 hover:scale-105 cursor-pointer"
-        data-aos="zoom-in"
-      />
+      {/* Content Section */}
+      <div className="max-w-4xl mx-auto px-4 mt-10">
+        {/* Back link */}
+        <Link
+          to="/blogs"
+          className="inline-block mb-8 text-orange-500 hover:text-orange-600 font-semibold transform transition-transform duration-300 hover:scale-105"
+        >
+          ← Back to Blogs
+        </Link>
 
-      {/* Blog content */}
-      <div className="prose max-w-none text-gray-700 mb-8" data-aos="fade-up">
-        {blog.description.split("\n").map((para, idx) => (
-          <p key={idx}>{para}</p>
-        ))}
-      </div>
-
-      {/* Second Image */}
-      <img
-        src={blog.image2}
-        alt={`${blog.title} - second`}
-        className="w-full rounded-lg mb-8 shadow-lg transition-transform duration-300 hover:scale-105 cursor-pointer"
-        data-aos="zoom-in"
-      />
-
-      {/* More content if exists */}
-      {blog.moreContent && (
-        <div className="prose max-w-none text-gray-700" data-aos="fade-up">
-          {blog.moreContent.split("\n").map((para, idx) => (
+        {/* Blog content */}
+        <div className="prose prose-lg max-w-none text-gray-700 space-y-6" data-aos="fade-up">
+          {blog.description.split("\n").map((para, idx) => (
             <p key={idx}>{para}</p>
           ))}
         </div>
-      )}
+
+        {/* Second Image */}
+        {blog.image1 && (
+          <div className="my-10" data-aos="zoom-in">
+            <img
+              src={blog.image1}
+              alt={`${blog.title} - extra`}
+              className="w-full rounded-lg shadow-lg hover:scale-[1.02] transition-transform duration-500"
+            />
+          </div>
+        )}
+
+        {/* More Content */}
+        {blog.moreContent && (
+          <div
+            className="prose prose-lg max-w-none text-gray-700 space-y-6"
+            data-aos="fade-up"
+          >
+            {blog.moreContent.split("\n").map((para, idx) => (
+              <p key={idx}>{para}</p>
+            ))}
+          </div>
+        )}
+
+        {/* Footer (share / back link) */}
+        <div className="mt-12 flex justify-between items-center border-t pt-6 text-sm text-gray-500">
+          <Link
+            to="/blogs"
+            className="text-orange-500 hover:text-orange-600 font-semibold"
+          >
+            ← Back to Blogs
+          </Link>
+          <button className="bg-orange-500 text-white px-4 py-2 rounded-full hover:bg-orange-600 transition">
+            Share this ✨
+          </button>
+        </div>
+      </div>
     </main>
   );
 };
