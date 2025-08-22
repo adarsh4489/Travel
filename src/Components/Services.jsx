@@ -14,29 +14,36 @@ const Services = () => {
   }, []);
 
   return (
-    <div className="w-[80%] mx-auto ">
-      <h1 className="text-3xl font-bold text-gray-800 mb-8 text-center" data-aos="fade-up">Why To Choose Us?</h1>
+    <div className="w-[90%] sm:w-[85%] md:w-[80%] mx-auto px-4">
+      <h1 
+        className="text-2xl sm:text-3xl font-bold text-gray-800 mb-6 sm:mb-8 text-center" 
+        data-aos="fade-up"
+      >
+        Why Choose Us?
+      </h1>
 
-      <div className="flex justify-center gap-8 ">
-        <div data-aos="zoom-in"  data-aos-delay="150">
+      <div className="flex flex-col sm:flex-row flex-wrap justify-center gap-6 sm:gap-8">
+        <div className="flex-1 min-w-[250px] sm:min-w-[200px]" data-aos="zoom-in" data-aos-delay="150">
           <ServiceCard
             icon={FaMapMarkedAlt}
-            title={"Top Travel Spots"}
-            description={"Explore top-rated places across India & beyond."}
+            title="Top Travel Spots"
+            description="Explore top-rated places across India & beyond."
           />
         </div>
-        <div data-aos="zoom-in" data-aos-delay="300">
+
+        <div className="flex-1 min-w-[250px] sm:min-w-[200px]" data-aos="zoom-in" data-aos-delay="300">
           <ServiceCard
             icon={FaUserTie}
-            title={"Local Travel Experts"}
-            description={"Every trip comes with knowledgeable, friendly guides."}
+            title="Local Travel Experts"
+            description="Every trip comes with knowledgeable, friendly guides."
           />
         </div>
-        <div data-aos="zoom-in" data-aos-delay="400">
+
+        <div className="flex-1 min-w-[250px] sm:min-w-[200px]" data-aos="zoom-in" data-aos-delay="400">
           <ServiceCard
             icon={FaLaptop}
-            title={"Easy Booking"}
-            description={"Fast and simple trip planning in just a few clicks."}
+            title="Easy Booking"
+            description="Fast and simple trip planning in just a few clicks."
           />
         </div>
       </div>

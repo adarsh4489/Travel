@@ -4,7 +4,7 @@ const CategoriesCard = ({ data }) => {
   return (
     <div
       data-aos="fade-up"
-      className="flex flex-col w-[15rem] rounded-xl h-[15rem] bg-[#DFD9CE] text-orange-600 hover:text-black hover:bg-orange-300 
+      className="flex flex-col w-[90%] md:w-[40%] lg:w-[30%] rounded-xl py-6 bg-[#DFD9CE] text-orange-600 hover:text-black hover:bg-orange-300 
                  items-center justify-center cursor-pointer
                  transition-colors duration-300 ease-in-out
                  shadow-md hover:shadow-xl

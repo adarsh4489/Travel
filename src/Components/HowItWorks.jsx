@@ -37,29 +37,29 @@ const HowItWorks = () => {
 
   return (
     <section className="py-24 bg-gray-50">
-      <div className="w-[80%] mx-auto text-center">
+      <div className="w-[80%] md:w-[90%] lg:w-[80%] mx-auto text-center">
         <h2
-          className="text-3xl font-bold text-gray-800 mb-12"
+          className="text-3xl md:text-4xl font-bold text-gray-800 mb-12"
           data-aos="fade-down"
         >
           How It Works
         </h2>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 ">
           {steps.map((step, index) => (
             <div
               key={index}
-              className="bg-white p-6 rounded-xl shadow-md cursor-pointer
+              className="bg-white p-4 rounded-xl shadow-md cursor-pointer
                          hover:shadow-xl hover:scale-[1.05]
                          transition-transform duration-300 ease-in-out"
               data-aos="fade-up"
               data-aos-delay={index * 150}
             >
               <div className="mb-6 flex justify-center">{step.icon}</div>
-              <h3 className="text-lg font-semibold text-gray-800 mb-3">
+              <h3 className="text-lg font-semibold text-gray-800 mb-3 text-center">
                 {step.title}
               </h3>
-              <p className="text-sm text-gray-600">{step.desc}</p>
+              <p className="text-sm text-gray-600 text-center">{step.desc}</p>
             </div>
           ))}
         </div>

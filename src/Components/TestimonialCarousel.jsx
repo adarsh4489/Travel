@@ -11,15 +11,15 @@ import TestimonialCard from "./TestimonialCard";
 
 const TestimonialCarousel = () => {
   return (
-    <div className="w-[80%] mx-auto py-24  ">
+    <div className="w-[90%] md:w-[85%] lg:w-[80%] mx-auto py-12">
       <h2 className="text-3xl font-bold text-gray-800 mb-8 text-center">
         What Our Travelers Say
       </h2>
-      <div className="">
+      <div>
         <Swiper
           modules={[Pagination, Autoplay, Navigation]}
           spaceBetween={30}
-          slidesPerView={3}
+          slidesPerView={1} // default for mobile
           loop={true}
           navigation={true}
           pagination={{ clickable: true }}
@@ -29,15 +29,15 @@ const TestimonialCarousel = () => {
           }}
           breakpoints={{
             640: {
-              slidesPerView: 1,
+              slidesPerView: 1, 
               spaceBetween: 20,
             },
-            1024: {
-              slidesPerView: 2,
+            768: {
+              slidesPerView: 2, 
               spaceBetween: 25,
             },
-            1280: {
-              slidesPerView: 3,
+            1024: {
+              slidesPerView: 3, 
               spaceBetween: 30,
             },
           }}
@@ -45,7 +45,7 @@ const TestimonialCarousel = () => {
           {testimonials.map((item) => (
             <SwiperSlide
               key={item.id}
-              className="overflow-visible  py-8" // Allow cards to pop out on hover if needed
+              className="overflow-visible py-8"
             >
               <div className="transition-transform duration-300 hover:scale-[1.05] hover:shadow-lg">
                 <TestimonialCard item={item} />

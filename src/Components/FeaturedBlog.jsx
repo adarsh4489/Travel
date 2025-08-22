@@ -15,8 +15,9 @@ const HomeBlogsSection = () => {
   }, []);
 
   const featuredBlogs = blogData.filter((blog) =>
-    blog.tag.includes("Most Read")
+    blog.tag.includes("featured")
   );
+  console.log(featuredBlogs);
 
   return (
     <section className="w-full mx-auto py-24 bg-gray-50">

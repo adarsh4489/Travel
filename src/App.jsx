@@ -17,8 +17,8 @@ import "slick-carousel/slick/slick-theme.css";
 function App() {
 
   return (
-    <div className='max-w-[1400px] w-full bg-[#f9f9f9] px-4 py-4 '>
-     <div className='mx-auto px-2  bg-orange-100 rounded-xl py-2 '>
+    <div className='max-w-[1400px] w-full bg-[#f9f9f9] px-2 py-2 mx-auto '>
+     <div className='px-2 w-full mx-auto bg-orange-100 rounded-xl py-2 '>
      <Navbar/>
      <Routes>
       <Route path='/' element={<Home/>}/>
