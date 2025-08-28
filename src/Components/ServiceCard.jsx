@@ -5,7 +5,7 @@ const ServiceCard = ({ icon: Icon, title, description }) => {
       className="
         group flex flex-col items-center text-center
         bg-[#DFD9CE] text-orange-600
-        gap-3 px-8 py-8 h-66 rounded-xl
+        gap-3 px-6  py-8 h-72 rounded-xl
         shadow-md hover:shadow-xl transition-colors duration-300 ease-in-out
         cursor-pointer
         hover:bg-orange-300 hover:text-black

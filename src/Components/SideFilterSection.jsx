@@ -18,7 +18,7 @@ const SideFilterSection = ({ filterTags, setFilterTags }) => {
 
   return (
     <div
-      className="w-1/4 bg-slate-200 p-4 rounded-xl flex flex-col gap-6 select-none"
+      className="w-full bg-slate-200 p-4 rounded-xl flex flex-col gap-6 select-none"
       data-aos="fade-right"
     >
       <h4 className="text-lg font-bold border-b border-orange-500 pb-2">Filters</h4>

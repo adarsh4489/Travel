@@ -20,16 +20,16 @@ const Cta = () => {
       style={{ backgroundImage: `url(${icy})` }}
     >
       <div
-        className='flex flex-col bg-white/50 p-24 h-[65vh] gap-6 w-[40%]'
+        className='flex flex-col items-center justify-center bg-white/50 p-12 md:p-24 h-[65vh] gap-6 w-[full] lg:w-[40%]'
       >
         <p
-          className='text-orange-500 font-semibold'
+          className='text-orange-500 font-semibold text-center md:textleft'
           data-aos="fade-right"
         >
           Together we can Make Memories
         </p>
         <h1
-          className='text-3xl w-[90%] font-bold'
+          className='text-3xl w-full font-bold  text-center md:textleft'
           data-aos="fade-up"
           data-aos-delay="200"
         >

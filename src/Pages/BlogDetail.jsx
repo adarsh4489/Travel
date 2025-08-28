@@ -80,19 +80,6 @@ const BlogDetail = () => {
             ))}
           </div>
         )}
-
-        {/* Footer (share / back link) */}
-        <div className="mt-12 flex justify-between items-center border-t pt-6 text-sm text-gray-500">
-          <Link
-            to="/blogs"
-            className="text-orange-500 hover:text-orange-600 font-semibold"
-          >
-            ← Back to Blogs
-          </Link>
-          <button className="bg-orange-500 text-white px-4 py-2 rounded-full hover:bg-orange-600 transition">
-            Share this ✨
-          </button>
-        </div>
       </div>
     </main>
   );

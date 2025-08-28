@@ -14,13 +14,13 @@ const About = () => {
         className={`w-[90%] mx-auto rounded-xl  flex flex-col py-36  justify-center items-center bg-center bg-no-repeat bg-cover gap-4`}
         style={{ backgroundImage: `url(${aboutBg})` }}
       >
-        <h2 className="text-4xl font-semibold text-orange-500">
+        <h2 className="text-3xl md:text-4xl  font-semibold text-orange-500">
           Know More About Us
         </h2>
         <p className="text-sm italic text-white">
           Making travel effortless and memorable!
         </p>
-        <p className="w-[50%] text-center text-white">
+        <p className="w-[75%] md:w-[50%]  text-center text-white">
           This is a great site for everything around the home, and it also has a
           useful You can see the best products in each category and they even to
           back up he information they are giving you.

@@ -40,16 +40,18 @@ const OurImpactSection = () => {
   }, []);
 
   return (
-    <section className="bg-green-50 py-24">
-      <div className="w-[90%] max-w-6xl mx-auto text-center">
+    <section className="bg-green-50 py-16 sm:py-20 md:py-24">
+      <div className="w-[95%] sm:w-[90%] max-w-6xl mx-auto text-center">
+        {/* Heading */}
         <h2
-          className="text-3xl font-bold text-gray-800 mb-12"
+          className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-800 mb-8 sm:mb-12"
           data-aos="fade-down"
         >
           Our Impact
         </h2>
 
-        <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-8">
+        {/* Stats Grid */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 sm:gap-10 md:gap-12">
           {impactStats.map((stat, index) => (
             <div
               key={stat.id}
@@ -57,7 +59,7 @@ const OurImpactSection = () => {
               data-aos="fade-up"
               data-aos-delay={index * 100}
             >
-              <h3 className="text-4xl font-extrabold text-orange-500">
+              <h3 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-orange-500">
                 <CountUp
                   start={0}
                   end={stat.number}
@@ -66,7 +68,7 @@ const OurImpactSection = () => {
                   suffix={stat.suffix}
                 />
               </h3>
-              <p className="text-gray-700 mt-2 text-base font-medium">
+              <p className="text-gray-700 mt-2 text-sm sm:text-base md:text-lg font-medium">
                 {stat.label}
               </p>
             </div>

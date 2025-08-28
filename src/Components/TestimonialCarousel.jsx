@@ -12,7 +12,7 @@ import TestimonialCard from "./TestimonialCard";
 const TestimonialCarousel = () => {
   return (
     <div className="w-[90%] md:w-[85%] lg:w-[80%] mx-auto py-12">
-      <h2 className="text-3xl font-bold text-gray-800 mb-8 text-center">
+      <h2 className="font-bold text-2xl sm:text-3xl md:text-4xl text-gray-800 mb-8 text-center">
         What Our Travelers Say
       </h2>
       <div>
