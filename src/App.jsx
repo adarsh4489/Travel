@@ -7,7 +7,7 @@ import Deals from './Pages/Deals'
 import Blogs from './Pages/Blogs'
 import BlogDetail from "./Pages/BlogDetail"
 import ErrorPage from './Components/ErrorPage'
-import { Routes,Route } from 'react-router'
+import { Routes,Route } from 'react-router-dom'
 import Footer from './Components/Footer'
 import OfferDetail from './Pages/OfferDetail'
 import About from './Pages/About'
